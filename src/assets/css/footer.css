@@ -1,0 +1,16 @@
+footer a {
+    color: #DF050F!important;
+    background-repeat: unset;
+    background-image: unset;
+    background-size: unset;
+    background-position: unset;
+    text-decoration-line: underline!important;
+    text-decoration-style: solid;
+    text-decoration-color: currentColor;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.2em;
+    text-decoration-skip: auto;
+    text-decoration-skip-ink: auto;
+    font-weight: 300!important;
+    font-size: 14.4px!important;
+}
