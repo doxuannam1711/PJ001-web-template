@@ -1,25 +1,29 @@
 
 import { Footer } from "@components/common";
 import {
+    Domain,
+    FocusPoint,
     Hero,
-    UnserAnsatz,
-    UnserStandort,
-    UnsereDienstleistungen,
-    UnserePartner,
-    CTA
+    Interested,
+    OurMission,
+    SocialBenefits,
+    TrustedBy,
+    WhatWeDo,
+    WorkWithUs
 } from "@components/home";
-
-
 
 export default function () {
     return (
         <div>
             <Hero />
-            <UnserAnsatz />
-            <UnserStandort />
-            <UnsereDienstleistungen />
-            <UnserePartner />
-            <CTA />
+            <OurMission />
+            <SocialBenefits />
+            <FocusPoint />
+            <Domain />
+            <Interested />
+            <TrustedBy />
+            <WhatWeDo />
+            <WorkWithUs />
             <Footer />
         </div>
     )
