@@ -4,15 +4,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      fontFamily: {
-        Montserrat: ["Montserrat", "san-serif"]
-      },
-      colors:{
-        bgColor: "#FFFFFF"
-      }
-
-    },
+    extend: {},
   },
   plugins: [],
 }

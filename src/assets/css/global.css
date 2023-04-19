@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,10 +10,7 @@
     font-family: Source Code Pro;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
     font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 600;
     line-height: 1.2em;
@@ -25,10 +23,7 @@ h4 {
     font-size: 2rem;
 }
 
-h1 strong,
-h2 strong,
-h3 strong,
-h4 strong {
+h1 strong, h2 strong, h3 strong, h4 strong {
     font-family: Abel;
 }
 
