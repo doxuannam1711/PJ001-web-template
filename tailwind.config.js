@@ -14,6 +14,13 @@ export default {
       },
       black: "black"
     },
+    fontWeight:{
+      thin:'100',
+      light:'300',
+      normal:'400',
+      semibold:'600',
+      bold:'700',
+    },
     extend: {
       fontFamily: {
         primary: ['montserrat', 'sans-serif'],
