@@ -7,3 +7,4 @@ export * from "./SocialBenefits";
 export * from "./TrustedBy";
 export * from "./WhatWeDo";
 export * from "./WorkWithUs";
+export * from "./common";

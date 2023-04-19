@@ -1,3 +1,40 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: montserrat;
+    src: url('./../../../public/fonts/montserrat.ttf') format('truetype');
+}
+
+html {
+    @apply font-primary
+}
+
+
+/* Typo */
+
+.text-typo-h3 {
+    @apply text-[44px] leading-[48px] font-bold;
+}
+
+.text-typo-h4 {
+    @apply text-[39px] leading-[48.17px] font-semibold tracking-[0.25px];
+}
+
+
+.text-typo-h5 {
+    @apply text-[24px] leading-[32px] font-semibold;
+}
+
+
+.text-typo-h6 {
+    @apply text-[19px] leading-[24px] font-light tracking-[0.15px];
+}
+
+
+.text-typo-body {
+    @apply text-[16px] leading-[24px] font-normal tracking-[0.15px];
+}
+
+
