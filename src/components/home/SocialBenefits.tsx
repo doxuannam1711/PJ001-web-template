@@ -3,7 +3,7 @@
 export function SocialBenefits() {
     return (
         <section>
-            SOCIAL BENEFIT SECTION
+            SocialBenefit
         </section>
     )
 }
