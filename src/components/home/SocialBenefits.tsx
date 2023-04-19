@@ -9,11 +9,11 @@ export function SocialBenefits() {
                 <HomeTitle textClassName="text-black" className="hidden md:flex">
                     Social <span className="text-primary-light">Benefits</span>
                 </HomeTitle>
-                <div className="md:ml-[110px] flex flex-col gap-[37px] text-center  md:w-[420px]">
-                    <h5 className="text-typo-h5 text-black">
+                <div className="md:ml-[110px] flex flex-col gap-[37px]  md:w-[420px]">
+                    <h5 className="text-typo-h5 text-black text-center md:text-left">
                         <span className="text-primary-light">Adapter</span> to each team member.
                     </h5>
-                    <p className="text-typo-body text-black hidden md:block ">
+                    <p className="text-typo-body text-black text-left hidden md:block ">
                         In unserem Unternehmen sind wir uns bewusst, dass jedes Teammitglied seine eigenen Bedürfnisse und Vorlieben hat, wenn es um die Leistungen geht, die es zu schätzen weiß.
                         <br />
                         Deshalb bieten wir eine Reihe von Sozialleistungen, die auf jeden Einzelnen zugeschnitten werden können. Ganz gleich, ob Sie sich für Sport, Kultur, Gesundheit oder etwas ganz anderes begeistern, wir haben für jeden etwas dabei.

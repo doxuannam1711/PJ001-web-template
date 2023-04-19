@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: montserrat;
-    src: url('./../../../public/fonts/montserrat.ttf') format('truetype');
+    src: url('/fonts/montserrat.ttf') format('truetype');
 }
 
 html {
