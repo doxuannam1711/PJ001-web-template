@@ -23,7 +23,7 @@ export function Bubble1({ children, size, className = "", textClassName = "" }: 
                 </linearGradient>
             </defs>
         </svg >
-        <div className={`absolute top-0 left-0 ${textClassName}`}>{children}</div>
+        <div className={`absolute top-0 left-0 w-full h-full flex justify-center items-center ${textClassName}`}>{children}</div>
     </div>
 
 }
