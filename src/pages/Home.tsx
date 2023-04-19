@@ -14,7 +14,7 @@ import {
 
 export default function () {
     return (
-        <div className="px-10 sm:px-[70x]">
+        <div >
             <Header />
             <Hero />
             <OurMission />
