@@ -35,7 +35,7 @@ export function SocialBenefitsCard({
                     </p>
                 </div>
 
-                <h5 className="text-typo-h5 text-primary-light w-full  ">
+                <h5 className="text-typo-h5 -light w-full  ">
                     {title}
                 </h5>
             </div>

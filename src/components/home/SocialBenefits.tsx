@@ -1,6 +1,6 @@
 import { HomeTitle } from "./common/HomeTitle";
 import { SocialBenefitsCard } from "./socialBenefits/SocialBenefitsCard";
-import SocialLogoExample from 'public/images/example/logo-example-social-benefits.png'
+import SocialLogoExample from '/images/example/logo-example-social-benefits.png'
 
 export function SocialBenefits() {
     return (
