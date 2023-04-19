@@ -1,5 +1,5 @@
 
-import { Footer } from "@components/common";
+import { Footer, Header } from "@components/common";
 import {
     Domain,
     FocusPoint,
@@ -15,6 +15,7 @@ import {
 export default function () {
     return (
         <div>
+            <Header />
             <Hero />
             <OurMission />
             <SocialBenefits />
