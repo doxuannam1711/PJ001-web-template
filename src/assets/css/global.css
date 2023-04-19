@@ -37,4 +37,20 @@ html {
     @apply text-[16px] leading-[24px] font-normal tracking-[0.15px];
 }
 
+.text-typo-overline{
+    @apply text-[12px] leading-[32px] font-bold  tracking-[1px] uppercase;
+}
 
+/* Common */
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scroll {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
