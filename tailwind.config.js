@@ -5,13 +5,14 @@ export default {
   ],
   theme: {
     colors: {
-      black: "black",
-      white: "white",
-      red: {
-        300: "#ed4842",
-        400: "#cf1826",
-        500: "#b42e25"
-      }
+      primary: {
+        default: "#262626",
+        contrast: "#FFFFFF",
+        main: "#C1121F",
+        dark: "#610910",
+        light: "#FF303E"
+      },
+      black: "black"
     },
     extend: {
       fontFamily: {
