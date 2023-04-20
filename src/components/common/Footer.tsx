@@ -1,28 +1,9 @@
 import { Bubble2, Cursor } from "@components/vector";
 import { ButtonOutline } from "./button/ButtonOutline";
 export interface Footer {
+    className?: string
 }
-
-const footerMenuData = [
-    {
-        title: "Home",
-        link: "#",
-    },
-    {
-        title: "Career",
-        link: "#",
-    },
-    {
-        title: "Jobs",
-        link: "#",
-    },
-    {
-        title: "About",
-        link: "#",
-    },
-]
-
-export function Footer() {
+export function Footer({ className = "" }: Footer) {
     return (
         <footer className="bg-primary-default">
             <div className="md:flex absolute mt-[55px] ml-[114px] hidden">
