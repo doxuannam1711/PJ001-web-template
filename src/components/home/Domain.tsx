@@ -11,7 +11,7 @@ export function Domain() {
       </HomeTitle>
 
       <div className="card flex w-full xl:px-[290px] md:px-[33px] h-full items-center max-sm:px-[16px]">
-        <div className="card-item pb-[84px] flex overflow-x-auto overflow-y-hidden gap-[42px] md:pl-[42px] w-full">
+        <div className="card-item pb-[84px] flex overflow-x-auto overflow-y-hidden md:gap-[84px] w-full flex-nowrap">
           <DomainsCard
             title={"Offentclicher CVerkher"}
             imageUrl={ImgExample01}
