@@ -4,10 +4,6 @@ import SocialLogoExample from '/images/example/logo-example-social-benefits.png'
 
 export function SocialBenefits() {
     return (
-<<<<<<< HEAD
-        <section>
-            SocialBenefit
-=======
         <section className="flex flex-col md:flex-row gap-[47px] md:gap-[110px] h-fit mb-[90px] md:justify-between md:mb-0  md:pr-0 md:pl-[70px]">
             <div className="pt-[109px]  px-[32px] md:px-0 md:pt-[304px] flex flex-col gap-[79px] w-full md:w-fit">
                 <HomeTitle textClassName="text-black" className="hidden md:flex">
@@ -40,7 +36,6 @@ export function SocialBenefits() {
                 </SocialBenefitsCard>
             </div>
             {/* Add hor scroll and add scroll block */}
->>>>>>> main
         </section>
     )
 }
