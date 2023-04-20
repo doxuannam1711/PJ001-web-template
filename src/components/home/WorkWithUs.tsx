@@ -2,15 +2,16 @@ import { Bubble1 } from "@components/vector";
 import { HomeMobileTitle } from "./common/HomeMobileTitle";
 import { Button, ButtonOutline } from "@components/common";
 import { HomeTitle } from "./common/HomeTitle";
+import { ScrollInfo } from "./common/ScrollInfo";
 
 
 export function WorkWithUs() {
     return (
-        <section className="md:relative">
+        <section>
             <HomeMobileTitle className="md:hidden mt-20">ICG <span className="text-primary-light">x</span> Career</HomeMobileTitle>
 
             {/* Bubbles */}
-            <div className="w-full flex flex-col justify-center items-center">
+            <div className="w-full flex flex-col justify-center items-center md:relative">
                 {/* Bubble Growth */}
                 <div className="mt-[200px] md:absolute md:left-[90px] md:top-[200px]">
                     <Bubble1 size={423.34}>
@@ -84,8 +85,8 @@ export function WorkWithUs() {
                 </div>
             </div>
 
-            {/* Spacing */}
-            <div className="mt-96"></div>
+           {/* scroll */}
+           <ScrollInfo className="mb-[175px] mt-[155px] md:mt-[264px] md:mb-[373px]"></ScrollInfo>
         </section>
     )
 }
