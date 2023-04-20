@@ -76,6 +76,12 @@ html {
     margin-right: 32px;
 }
 
+
+.scroll-mx-110p::-webkit-scrollbar-track {
+    margin-left: 110px;
+    margin-right: 110px;
+}
+
 .scroll-custom::-webkit-scrollbar-thumb {
     border-radius: 25px;
     background-color: #FF303E;
