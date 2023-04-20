@@ -4,7 +4,7 @@ import { Logo1 } from "@components/vector";
 
 export function Interested() {
     return (
-        <section className="w-full min-h-screen">
+        <section className="">
             <div className="flex justify-center">
                 <Logo1 sizeDesktop={446.66} desktopClassName="" sizeMobile={325.64} mobileClassName="flex"></Logo1>
             </div>
