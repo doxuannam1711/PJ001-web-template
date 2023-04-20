@@ -23,7 +23,7 @@ export function DomainsCard({
         <img src={imageUrl} alt="" className="image-mask h-full object-cover" />
       </div>
 
-      <div className="content text-center mt-[40px] lg:text-start md:flex md:flex-col md:items-start w-[400px]">
+      <div className="content text-center mt-[40px] lg:text-start md:flex md:flex-col lg:items-start w-[400px]">
         <h2 className="font-bold text-[30px] md:text-[44px] md:leading-[48px] md:p-0 px-[85px] leading-[36px]">
           {title}
         </h2>
