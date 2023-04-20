@@ -4,7 +4,7 @@ export interface Logo2 {
 
 }
 export function Logo2({ className, size = 266 }: Logo2) {
-    return <svg width={size} height={(266 * ((97 * 100) / 266)) / 100} viewBox="0 0 266 97" fill="currentColor" className={className} xmlns="http://www.w3.org/2000/svg">
+    return <svg width={size} height={(size * ((97 * 100) / size)) / 100} viewBox="0 0 266 97" fill="currentColor" className={className} xmlns="http://www.w3.org/2000/svg">
         <g clip-path="url(#clip0_577_30452)">
             <path d="M0.414093 59.2004C-2.7248 28.8419 12.4214 2.73443 34.082 0.259608C55.7425 -2.21521 81.7674 13.1157 92.0548 33.8782C102.315 54.5432 87.1691 80.6507 58.3869 92.8136C29.6048 104.982 3.57449 89.651 0.414093 59.2004Z" fill="#C1121F" />
             <path d="M19.7957 61.4645V37.5286H25.1597V61.4645H19.7957Z" fill="white" />
