@@ -13,20 +13,23 @@ import {
 } from "@components/home";
 
 export default function () {
-  
+
     return (
         <div className="overflow-hidden">
-            <BackToTop/>
+            <BackToTop />
             <Header />
             <Hero />
             <OurMission />
-            <SocialBenefits />
-            <FocusPoint />
-            <Domain />
-            <Interested />
-            <TrustedBy />
             <WhatWeDo />
+            <FocusPoint />
+
+
+            <Domain />
+            <TrustedBy />
+
             <WorkWithUs />
+            <SocialBenefits />
+            <Interested />
             <Footer />
         </div>
     )
