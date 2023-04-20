@@ -11,19 +11,22 @@ export function WhatWeDoCard({
     className = "",
     imageUrl = ""
 }: WhatWeDoCard) {
-    return <div className={`w-full ${className}`}>
-        <div className="mt-[45px] w-full flex justify-center md:mt-[81px]">
-            <img src={imageUrl} className="w-[229px] h-[229px]" />
-        </div>
+    return (
+        <div
+            className={`card items-center flex flex-col w-[390px] ${className}`}
+        >
+            <div className="image w-full flex justify-center overflow-hidden">
+                <img src={imageUrl} alt="" className="image-mask w-[230px] h-full object-cover" />
+            </div>
 
-        <div className="mt-[26px] mx-auto w-[280px] h-[64px] font-bold text-[30px] leading-[32px] 
-        text-center text-primary-default">
-            {title}
+            <div className="pt-[26px] w-[390px] items-center flex flex-col">
+                <div className="text-[30px] leading-[32px] text-center w-[280px] h-[64px] font-bold">
+                    {title}
+                </div>
+                <div className="text-[16px] leading-[24px] w-[310px] tracking-[0.15px] text-center pt-[42px]">
+                    {children}
+                </div>
+            </div>
         </div>
-
-        <div className="mt-[16px] mx-auto w-[310px] h-[72px] text-[16px] tracking-[0.15px] leading-[24px] 
-        text-center text-primary-default">
-            {children}
-        </div>
-    </div>
+    )
 }

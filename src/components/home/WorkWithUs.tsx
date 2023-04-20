@@ -5,7 +5,7 @@ import { Button, ButtonOutline } from "@components/common";
 
 export function WorkWithUs() {
     return (
-        <section>
+        <section className="flex flex-col w-full justify-center min-h-screen mx-auto md:pl-[70px]">
             <HomeMobileTitle className="md:hidden mt-20">ICG <span className="text-primary-light">x</span> Career</HomeMobileTitle>
 
             {/* Bubbles */}
