@@ -42,7 +42,7 @@ export function Footer() {
                         You’re One click away.
                     </p>
                     <ButtonOutline
-                        className="w-[224px] h-[48px] mt-[14px] mb-[44px]"
+                        className="w-[224px] h-[48px] mt-[14px] mb-[44px] px-[26px] py-[11.5px]"
                         textClassName="text-primary-contrast text-center !font-[500] !leading-[20.72px]"
                         props={{
                             onClick: () => console.log("Button clicked"),
@@ -54,7 +54,7 @@ export function Footer() {
                         We’re ready for it!
                     </p>
                     <ButtonOutline
-                        className="w-[224px] h-[48px] mt-[14px]"
+                        className="w-[224px] h-[48px] mt-[14px] px-[26px] py-[11.5px]"
                         textClassName="text-primary-contrast text-center !font-[500] !leading-[20.72px]"
                         props={{
                             onClick: () => console.log("Button clicked"),
@@ -70,7 +70,7 @@ export function Footer() {
                             Klicke hier! :)
                         </p>
                         <ButtonOutline
-                            className="w-[224px] h-[48px] mt-[16px] mb-[44px]"
+                            className="w-[224px] h-[48px] mt-[16px] mb-[44px] px-[26px] py-[11.5px]"
                             textClassName="text-primary-contrast text-center text-[17px] !font-[500] !leading-[20.72px]"
                             props={{
                                 onClick: () => console.log("Button clicked"),
@@ -85,7 +85,7 @@ export function Footer() {
                             Wir sind immer offen.
                         </p>
                         <ButtonOutline
-                            className="w-[224px] h-[48px] mt-[16px] mb-[44px]"
+                            className="w-[224px] h-[48px] mt-[16px] mb-[44px] px-[26px] py-[11.5px]"
                             textClassName="text-primary-contrast text-center text-[17px] !font-[500] !leading-[20.72px]"
                             props={{
                                 onClick: () => console.log("Button clicked"),
@@ -104,12 +104,12 @@ export function Footer() {
                             </li>
                         ))}
                     </ul>
-                    <div className="text-primary-contrast text-center hover:text-primary-light text-[17px] font-[500] leading-[25px]">
+                    <div className="text-primary-contrast text-center hover:text-primary-light text-[17px] font-[500] leading-[25px] mt-[13px] md:mt-[24px]">
                         <a href="">Office</a>
                     </div>
                 </div>
             </div>
-            <div className="md:flex justify-center hidden">
+            <div className="md:flex justify-center hidden mt-[120.68px]">
                 <svg width="1072" height="173" viewBox="0 0 1072 173" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M331.26 39.2611C652.841 -63.5776 970.246 44.759 1046.62 278.044C1122.99 511.306 1016.54 832.799 815.255 992.884C614.934 1152.47 297.529 1044.14 99.8738 754.106C-97.7536 464.092 8.71024 142.593 331.26 39.2611Z" fill="url(#paint0_linear_548_574)" />
                     <defs>
