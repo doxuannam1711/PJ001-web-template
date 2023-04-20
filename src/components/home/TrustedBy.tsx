@@ -50,7 +50,7 @@ export function TrustedBy() {
                     <img src={TrustedBy6} className={`w-[120px] h-[44 px]`} />
                 </div>
 
-                <div className="w-[184px] ml-[32px] h-[122px] md:w-[200px] md:h-[132px] md:ml-0px-[15px] pt-[37px] pb-[36px] 
+                <div className="w-[184px] ml-[32px] h-[122px] md:w-[200px] md:h-[132px] md:ml-0 px-[15px] pt-[37px] pb-[36px] 
                 md:pt-[42px] rounded-[15px] shadow-[0_15px_46px_8px_rgba(38,38,38,0.08)] md:py-[42px] md:px-[23px]">
                     <img src={TrustedBy1} className={`w-[154px] h-[49px]`} />
                 </div>

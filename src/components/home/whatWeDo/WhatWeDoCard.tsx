@@ -13,7 +13,7 @@ export function WhatWeDoCard({
 }: WhatWeDoCard) {
     return (
         <div
-            className={`card items-center flex flex-col w-[390px] ${className}`}
+            className={`card scroll-mx-[32px] items-center flex flex-col w-[390px] ${className}`}
         >
             <div className="image w-full flex justify-center overflow-hidden">
                 <img src={imageUrl} alt="" className="image-mask w-[230px] h-full object-cover" />

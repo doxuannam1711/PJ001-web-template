@@ -15,8 +15,8 @@ export function WhatWeDo() {
             </HomeTitle>
 
             <div className="card mt-[45px] h-full w-full">
-                <div className="card-item flex flex-row md:gap-x-[75px] pb-[71px] gap-x-[53px]
-                 overflow-x-auto overflow-y-hidden w-full justify-center">
+                <div className="card-item flex flex-row md:gap-x-[75px] pb-[71px] gap-x-[53px] px-[32px] scroll-mx-8
+                 overflow-x-auto overflow-y-hidden w-full md:justify-center hide-scroll-desktop scroll-custom">
                     <WhatWeDoCard title="Process Engineering" imageUrl={WhatWeDo1}>
                         This is a brief explanation of the service with USP and an attractive product value for it.
                     </WhatWeDoCard>
