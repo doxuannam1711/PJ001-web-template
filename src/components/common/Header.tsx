@@ -35,7 +35,6 @@ export function Header({ }: Header) {
 
             <div className="hidden max-w-[1440px] h-[69px] px-180 py-13 gap-[490px] justify-between flex-row items-center md:flex">
                 <a className="flex" href="/" title="logo">
-                    {/* <Logo2 size={43}></Logo2> */}
                     <Cursor size={43} className=""></Cursor>
                     <div className="ml-[6.8px] flex flex-col w-[42.26px] h-[43px] text-[8px] justify-center font-semibold">
                         <p>INFORMATION</p>
@@ -75,6 +74,5 @@ export function Header({ }: Header) {
                 </svg>
             </div>
         </header >
-
     )
 }

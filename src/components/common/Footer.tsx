@@ -44,7 +44,7 @@ export function Footer() {
                         </div>
                     </div>
                     <p className="text-[40px] font-bold leading-[48px] text-center text-primary-contrast mt-[23px] md:mt-[288px]">Let’s Connect.</p>
-                    <div className="mx-[88px] md:mx-[400px] w-[184px] md:w-auto h-0 border-solid border-[1px] border-primary-light mt-[11px] md:mt-[40px]"></div>
+                    <div className="mx-[88px] md:mx-[400px] w-auto md:w-auto h-0 border-solid border-[1px] border-primary-light mt-[11px] md:mt-[40px]"></div>
                 </div>
                 <div className="md:hidden text-center">
                     <p className="text-[18.38px] font-semibold leading-[24.5px] text-center text-primary-contrast">
@@ -107,7 +107,7 @@ export function Footer() {
                     </div>
                 </div>
                 <div className="">
-                    <div className="mx-[88px] w-[184px] h-0 border-solid border-[1px] border-primary-light mb-[28px] md:hidden"></div>
+                    <div className="mx-[88px] w-auto h-0 border-solid border-[1px] border-primary-light mb-[28px] md:hidden"></div>
                     <ul className="flex text-primary-contrast gap-[23px] justify-center mb-[13px]">
                         {footerMenuData.map(item => (
                             <li className="hover:text-primary-light" key={item.title}>
