@@ -5,13 +5,13 @@ import ImgExample01 from "/images/example/imgexample01.jpg";
 
 export function Domain() {
   return (
-    <section className="domain flex flex-col gap-1 w-full justify-center min-h-screen mx-auto md:pl-[70px]">
+    <section className="domain flex flex-col gap-1 w-full justify-center min-h-screen mx-auto md:pl-[70px] max-md:pl-0">
       <HomeTitle textClassName="text-black" className="hidden md:flex">
         Domains
       </HomeTitle>
 
-      <div className="card flex w-full md:px-[290px] h-full">
-        <div className="card-item pb-[84px] flex overflow-x-auto overflow-y-hidden gap-[42px] w-full">
+      <div className="card flex w-full xl:px-[290px] md:px-[33px] h-full items-center max-sm:px-[16px]">
+        <div className="card-item pb-[84px] flex overflow-x-auto overflow-y-hidden gap-[42px] md:pl-[42px] w-full">
           <DomainsCard
             title={"Offentclicher CVerkher"}
             imageUrl={ImgExample01}

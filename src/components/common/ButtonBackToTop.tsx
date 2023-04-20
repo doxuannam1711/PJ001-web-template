@@ -31,7 +31,9 @@ export function BackToTop() {
       data-mdb-ripple="true"
       onClick={scrollToTop}
       data-mdb-ripple-color="light"
-      className={`${isVisible ? "opacity-100 block" : "opacity-0 hidden"} fixed p-3 bg-red-600 text-white text-xs leading-tight uppercase hover:bg-red-700 hover:shadow-lg hover:bg-primary-contrast rounded-full focus:bg-red-700 focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-500 ease-in-out bottom-[70px] right-[175px]`}
+      className={`${
+        isVisible ? "opacity-100 block" : "opacity-0 hidden"
+      } fixed p-3 bg-red-600 text-white text-xs leading-tight uppercase hover:bg-red-700 hover:shadow-lg bg-primary-contrast rounded-full focus:bg-red-700 focus:ring-0 active:bg-red-800 active:shadow-lg transition duration-500 ease-in-out md:bottom-[70px] right-[55px] bottom-[100px] md:right-[175px]`}
       id="btn-back-to-top"
     >
       <svg
