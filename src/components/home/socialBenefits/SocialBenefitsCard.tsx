@@ -16,7 +16,7 @@ export function SocialBenefitsCard({
     return <div
         className={`
         pt-[34px] md:pt-[35px] pl-[22px] md:pl-[26px]  pr-[23px] md:pr-[25px] pb-[34px] md:pb-10 flex flex-col md:flex-row 
-        gap-[29px] bg-primary-contrast rounded-[15px]   md:h-[293px] w-fit md:w-min md:min-w-[570px]
+        gap-[29px] bg-primary-contrast rounded-[15px]   md:h-[293px] w-fit   md:min-w-[570px] md:w-min
     shadow-[0px_15px_46px_8px_rgba(38,38,38,0.08)] max-md:scroll-mx-[32px]  ${className}
     `}>
         <div className="flex flex-row gap-1 w-max">

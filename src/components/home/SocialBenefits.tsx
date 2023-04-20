@@ -24,6 +24,7 @@ export function SocialBenefits() {
                             <br />
                             Unser Ziel ist es, dass sich unser Team in allen Lebensbereichen unterstützt und wertgeschätzt fühlt, nicht nur bei der Arbeit.
                         </p>
+                        <ScrollInfo className="hidden md:flex md:mt-[99px]  " />
                     </div>
                 </div>
                 {/* No hide scroll now */}
@@ -47,7 +48,7 @@ export function SocialBenefits() {
                 </div>
 
                 {/* Add hor scroll and add scroll block */}
-                <ScrollInfo className="md:hidden" />
+                <ScrollInfo className="md:hidden !w-full" />
             </section>
 
         </>
