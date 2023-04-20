@@ -17,6 +17,9 @@ body{
 
 
 /* Typo */
+.text-typo-h2 {
+    @apply text-[60px] leading-[64px] font-bold tracking-[-0.5px];
+}
 
 .text-typo-h3 {
     @apply text-[44px] leading-[48px] font-bold;

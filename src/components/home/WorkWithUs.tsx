@@ -8,12 +8,12 @@ import { ScrollInfo } from "./common/ScrollInfo";
 export function WorkWithUs() {
     return (
         <section>
-            <HomeMobileTitle className="md:hidden mt-20">ICG <span className="text-primary-light">x</span> Career</HomeMobileTitle>
+            <HomeMobileTitle className="md:hidden mt-20 mb-[587px]">ICG <span className="text-primary-light">x</span> Career</HomeMobileTitle>
 
             {/* Bubbles */}
             <div className="w-full flex flex-col justify-center items-center md:relative">
                 {/* Bubble Growth */}
-                <div className="mt-[200px] md:absolute md:left-[90px] md:top-[200px]">
+                <div className="md:mt-[200px] md:absolute md:left-[90px] md:top-[200px]">
                     <Bubble1 size={423.34}>
                         <div className="w-[300.86px] h-[97.05px]
                         font-semibold text-primary-contrast tracking-[-0.91px] leading-[72.79px] rotate-[-8.43deg] 
@@ -48,7 +48,7 @@ export function WorkWithUs() {
 
             <div className="font-bold leading-[48px] text-[40px] ml-[39.5px] mr-[40.5px] text-center mt-[222px] md:hidden">
                 Work <span className="text-primary-light">with</span> us
-                <div className="mt-[11px] h-[3px] w-[184px] bg-[#ED4842] mx-auto" />
+                <div className="mt-[11px] h-[3px] w-[184px] bg-primary-light mx-auto" />
             </div>
 
             <HomeTitle textClassName="text-black" className="hidden md:flex md:pl-[70px]">
@@ -67,7 +67,7 @@ export function WorkWithUs() {
                 brief explanation of the service with USP and an attractive product.
             </div>
 
-            <div className="w-full mt-[53px] flex flex-col gap-y-[16px] md:flex-row md:gap-x-[32px] md:justify-center">
+            <div className="w-full mt-[53px] md:mt-[25px] flex flex-col gap-y-[16px] md:flex-row md:gap-x-[32px] md:justify-center">
                 {/* Button Zu allen Jobs */}
                 <div className="w-fit h-fit mx-auto md:mx-0">
                     <Button className="w-[194px] h-[48px] py-[13.5px] px-[36px]"
@@ -86,7 +86,7 @@ export function WorkWithUs() {
             </div>
 
            {/* scroll */}
-           <ScrollInfo className="mb-[175px] mt-[155px] md:mt-[264px] md:mb-[373px]"></ScrollInfo>
+           <ScrollInfo className="mb-[109px] mt-[155px] md:mt-[264px] md:mb-0"></ScrollInfo>
         </section>
     )
 }
