@@ -1,6 +1,7 @@
 // Common
 export * from "./common/HomeTitle";
 export * from "./common/HomeMobileTitle";
+export * from "./common/ScrollInfo";
 
 export * from "./Domain";
 
@@ -20,4 +21,4 @@ export * from "./WhatWeDo";
 export * from "./WorkWithUs";
 
 //What we do
-export * from "./whatWeDo/WhatWeDoCard"
+export * from "./whatWeDo/WhatWeDoCard";
