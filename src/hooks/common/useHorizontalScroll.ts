@@ -40,11 +40,7 @@ export function useHorizontalScroll<
           }
         }
         let backToPos = false;
-        // console.log(
-        //   el.scrollLeft,
-        //   el.scrollWidth - el.offsetWidth,
-        //   el.scrollLeft >= el.scrollWidth - el.offsetWidth
-        // );
+       
         if (
           (Math.abs(el.scrollLeft - (el.scrollWidth - el.offsetWidth)) <= 5 &&
             e.deltaY > 0) ||
@@ -72,11 +68,7 @@ export function useHorizontalScroll<
           e.deltaY +
           (e.deltaY > 0 ? offset : -offset) +
           offsetItem;
-        console.log(
-          offsetParent,
-          document.documentElement.scrollTop,
-          Math.abs(offsetParent - document.documentElement.scrollTop)
-        );
+        
         if (
           Math.abs(offsetParent - document.documentElement.scrollTop) <
             areaCheckOffset &&

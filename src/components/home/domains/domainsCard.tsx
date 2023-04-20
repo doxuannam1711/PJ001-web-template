@@ -1,7 +1,6 @@
 import { ButtonOutline } from "@components/common";
-import { RefreshedPopup } from "@components/popup";
-import { Cursor, CursorMask } from "@components/vector";
 import { usePopup } from "@hooks/index";
+import { DomainPopup } from "./DomainsPopup";
 
 export interface DomainsCard {
   title: string;
@@ -17,8 +16,9 @@ export function DomainsCard({
 }: DomainsCard) {
   const { isOpen, open, close } = usePopup()
   return (
+    
     <>
-      <RefreshedPopup isOpen={isOpen} onClose={close} />
+      <DomainPopup isOpen={isOpen} onClose={close} />
       <div
         className={`
         flex-col grow items-center w-full md:min-h-[80vh] xl:gap-[84px] md:gap-[64px] lg:flex-row-reverse md:items-center md:justify-center md:basis-full flex-1 md:px-[20%] lg:px-[10%] flex scroll-mx-[32px] md:scroll-mx-[unset] ${className}

@@ -1,4 +1,3 @@
-
 import { BackToTop, Footer, Header } from "@components/common";
 import {
     Domain,
@@ -9,25 +8,37 @@ import {
     SocialBenefits,
     TrustedBy,
     WhatWeDo,
-    WorkWithUs
+    WorkWithUs,
 } from "@components/home";
+import { RefreshedPopup } from "@components/popup";
+import { usePopup } from "@hooks/index";
+import { useEffect } from "react";
 
 export default function () {
-
+    const { isOpen, close, open } = usePopup()
+    useEffect(() => {
+        let timeout = setTimeout(() => { open() }, 5000)
+        return () => {
+            clearTimeout(timeout)
+        }
+    }, [])
     return (
-        <div className="overflow-x-hidden">
-            <BackToTop />
+        <>
             <Header />
-            <Hero />
-            <OurMission />
-            <WhatWeDo />
-            <FocusPoint />
-            <Domain />
-            <TrustedBy />
-            <WorkWithUs />
-            <SocialBenefits />
-            <Interested />
+            <BackToTop />
+            <RefreshedPopup isOpen={isOpen} onClose={close} />
+            <div className="overflow-hidden m-auto">
+                <Hero />
+                <OurMission />
+                <SocialBenefits />
+                <FocusPoint />
+                <Domain />
+                <Interested />
+                <TrustedBy />
+                <WhatWeDo />
+                <WorkWithUs />
+            </div>
             <Footer />
-        </div>
-    )
+        </>
+    );
 }

@@ -1,4 +1,3 @@
-import { RefreshedPopup } from "@components/popup";
 import { HomeTitle } from "./common/HomeTitle";
 import { ScrollInfo } from "./common/ScrollInfo";
 import { DomainsCard } from "./domains/domainsCard";
@@ -41,7 +40,6 @@ export function Domain() {
             />
           </div>
         </div>
-
       </section>
       <ScrollInfo className="my-10 md:mt-[163px] md:mb-[288px]" />
     </>

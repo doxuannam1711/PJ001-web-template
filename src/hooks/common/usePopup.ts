@@ -5,13 +5,11 @@ export interface UsePopup {
 }
 export function usePopup({ init = false }: UsePopup = { init: false }) {
   const [isOpen, setIsOpen] = useState(init);
-  const open = (callback = () => {}) => {
+  const open = () => {
     setIsOpen(true);
-    callback();
   };
-  const close = (callback = () => {}) => {
+  const close = () => {
     setIsOpen(false);
-    callback();
   };
   return { isOpen, open, close };
 }

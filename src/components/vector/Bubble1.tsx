@@ -14,12 +14,12 @@ export function Bubble1({ children, size, className = "", textClassName = "" }: 
 
             <defs>
                 <linearGradient id="paint0_linear_249_75299" x1="223.162" y1="53.6621" x2="223.162" y2="381.662" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#C1121F" />
-                    <stop offset="1" stop-color="#AB1722" />
+                    <stop stopColor="#C1121F" />
+                    <stop offset="1" stopColor="#AB1722" />
                 </linearGradient>
                 <linearGradient id="paint1_linear_249_75299" x1="366.984" y1="143.653" x2="79.678" y2="303.009" gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#D51826" />
-                    <stop offset="1" stop-color="#941A23" />
+                    <stop stopColor="#D51826" />
+                    <stop offset="1" stopColor="#941A23" />
                 </linearGradient>
             </defs>
         </svg >

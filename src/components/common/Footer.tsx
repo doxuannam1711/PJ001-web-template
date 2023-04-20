@@ -114,15 +114,15 @@ export function Footer() {
                     <path d="M331.26 39.2611C652.841 -63.5776 970.246 44.759 1046.62 278.044C1122.99 511.306 1016.54 832.799 815.255 992.884C614.934 1152.47 297.529 1044.14 99.8738 754.106C-97.7536 464.092 8.71024 142.593 331.26 39.2611Z" fill="url(#paint0_linear_548_574)" />
                     <defs>
                         <linearGradient id="paint0_linear_548_574" x1="1080.48" y1="426.878" x2="29.9802" y2="644.96" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#C1121F" />
-                            <stop offset="1" stop-color="#6C151C" />
+                            <stop stopColor="#C1121F" />
+                            <stop offset="1" stopColor="#6C151C" />
                         </linearGradient>
                     </defs>
                     <path d="M1066.68 411.81C1107.34 746.977 941.358 1038.41 697.885 1069.64C454.436 1100.88 158.631 935.994 39.1667 708.237C-79.9944 481.526 85.9851 190.092 407.958 50.379C729.908 -89.3096 1025.71 75.5985 1066.68 411.81Z" fill="url(#paint0_linear_548_576)" />
                     <defs>
                         <linearGradient id="paint0_linear_548_576" x1="545.342" y1="1074.97" x2="528.282" y2="2.21074" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#C1121F" />
-                            <stop offset="1" stop-color="#6C151C" />
+                            <stop stopColor="#C1121F" />
+                            <stop offset="1" stopColor="#6C151C" />
                         </linearGradient>
                     </defs>
                 </svg>
@@ -132,15 +132,15 @@ export function Footer() {
                     <path d="M78.0519 18.0925C220.33 -27.4067 360.76 20.525 394.55 123.738C428.337 226.94 381.244 369.18 292.187 440.006C203.559 510.615 63.1282 462.683 -24.3211 334.363C-111.758 206.052 -64.6548 63.8101 78.0519 18.0925Z" fill="url(#paint0_linear_548_667)" />
                     <defs>
                         <linearGradient id="paint0_linear_548_667" x1="409.529" y1="189.587" x2="-55.2442" y2="286.074" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#C1121F" />
-                            <stop offset="1" stop-color="#6C151C" />
+                            <stop stopColor="#C1121F" />
+                            <stop offset="1" stopColor="#6C151C" />
                         </linearGradient>
                     </defs>
                     <path d="M401.655 182.114C419.644 330.403 346.209 459.343 238.489 473.162C130.779 486.981 -0.0948243 414.031 -52.9496 313.264C-105.67 212.959 -32.2357 84.019 110.216 22.2054C252.657 -39.5974 383.531 33.3634 401.655 182.114Z" fill="url(#paint0_linear_548_824)" />
                     <defs>
                         <linearGradient id="paint0_linear_548_824" x1="170.999" y1="475.518" x2="163.451" y2="0.89426" gradientUnits="userSpaceOnUse">
-                            <stop stop-color="#C1121F" />
-                            <stop offset="1" stop-color="#6C151C" />
+                            <stop stopColor="#C1121F" />
+                            <stop offset="1" stopColor="#6C151C" />
                         </linearGradient>
                     </defs>
                 </svg>
