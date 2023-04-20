@@ -10,7 +10,7 @@ import { ScrollInfo } from "./common/ScrollInfo"
 
 export function FocusPoint() {
     const [selectedPoint, setSelectedPoint] = useState(-1);
-    const ref = useHorizontalScroll<HTMLDivElement>()
+ 
     const onClickSetSelectedPoint = (point: number) => () => {
         setSelectedPoint(point)
     }
@@ -27,7 +27,7 @@ export function FocusPoint() {
                 <FocusPointTag isSelected={selectedPoint == 6} onClick={onClickSetSelectedPoint(6)}>System Administrator</FocusPointTag>
                 <FocusPointTag isSelected={selectedPoint == 7} onClick={onClickSetSelectedPoint(7)}>Business Analyst</FocusPointTag>
             </div>
-            <div ref={ref} className="px-[32px] md:pl-[41px] flex flex-row overflow-x-auto !overscroll-auto  hide-scroll-desktop   w-full gap-[43px] pb-[63px] md:pb-[100px]  md:pr-[70px] scroll-custom scroll-mx-8">
+            <div className="px-[32px] md:pl-[41px] flex flex-row overflow-x-auto !overscroll-auto  hide-scroll-desktop   w-full gap-[43px] pb-[63px] md:pb-[100px]  md:pr-[70px] scroll-custom scroll-mx-8">
                 <FocusPointCard title="Fokus 1" imageUrl={FocusPointExampleImage}>
                     This is a brief explanation of the service with USP and an attractive product value for the client in general and this is a text. USP and an attractive product value for the client in general and this is a text.
                 </FocusPointCard>
@@ -46,6 +46,6 @@ export function FocusPoint() {
             </div>
         </div>
         <ScrollInfo className="hidden md:flex !mt-[88px]" />
-     
+
     </section>
 }
