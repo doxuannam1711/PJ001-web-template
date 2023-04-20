@@ -16,7 +16,7 @@ export function DomainsCard({
   return (
     <div
       className={`
-        flex-col grow items-center w-full md:min-h-[80vh] xl:gap-[84px] md:gap-[64px] lg:flex-row-reverse md:items-center md:justify-center md:basis-full flex-1 md:px-[20%] flex ${className}
+        flex-col grow items-center w-full md:min-h-[80vh] xl:gap-[84px] md:gap-[64px] lg:flex-row-reverse md:items-center md:justify-center md:basis-full flex-1 md:px-[20%] lg:px-[10%] flex ${className}
     `}
     >
       <div className="px-[88px] md:px-0 md:max-h-[100vh] max-sm:h-full md:w-[460px] w-full flex justify-center overflow-hidden">
