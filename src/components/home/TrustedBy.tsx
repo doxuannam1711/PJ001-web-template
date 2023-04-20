@@ -1,31 +1,68 @@
-import SBB from 'public/images/example/SBB-3.svg'
-import Vector1 from 'public/images/example/Vector-1.svg'
-import Vector2 from 'public/images/example/Vector-2.svg'
-import Bundeshaus from 'public/images/example/bundeshaus-5.svg'
+import TrustedBy1 from '/images/example/bundeshaus-5.png'
+import TrustedBy2 from '/images/example/trusted-by-2.png'
+import TrustedBy3 from '/images/example/trusted-by-3.png'
+import TrustedBy4 from '/images/example/trusted-by-4.png'
+import TrustedBy5 from '/images/example/trusted-by-5.png'
+import TrustedBy6 from '/images/example/trusted-by-6.png'
 import { HomeMobileTitle } from './common/HomeMobileTitle'
 
 export function TrustedBy() {
     return (
-        <section>
+        <section className="flex flex-col w-full justify-center min-h-screen mx-auto md:pl-[70px]">
+            {/* Spacing */}
+            <div className="mt-12"></div>
+
             <HomeMobileTitle className="md:hidden mt-20">Trusted by</HomeMobileTitle>
 
-            <div className="md:hidden mt-[64px] flex flex-col justify-center items-center w-full">
-                <div className="w-[184px] h-[122px] ml-[-56px] rounded-[15px] shadow-[0_15px_46px_8px_rgba(38,38,38,0.08)]">
-                    <img src={Bundeshaus} className={`w-[154px] h-[49px] mx-[15px] mt-[37px] mb-[36px]`} />
+            <div className="hidden md:block mx-auto text-typo-h3 w-fit">
+                Unsere begeisterten Kunden
+            </div>
+
+            <div className="md:w-fit md:grid mx-auto md:gap-x-[20px] md:gap-y-[22px] md:grid-cols-4 mt-[64px] flex flex-col 
+            gap-y-[27px] justify-center items-center w-full">
+                <div className="w-[184px] h-[122px] md:w-[200px] md:h-[132px] md:ml-0 ml-[-119px] px-[15px] pt-[37px] pb-[36px] 
+                md:pt-[42px] rounded-[15px] shadow-[0_15px_46px_8px_rgba(38,38,38,0.08)] md:py-[42px] md:px-[23px]">
+                    <img src={TrustedBy1} className={`w-[154px] h-[49px]`} />
                 </div>
 
-                <div className="mt-[27px] w-[184px] ml-[56px] h-[122px] rounded-[15px] shadow-[0_15px_46px_8px_rgba(38,38,38,0.08)]">
-                    <img src={Vector2} className={`w-[104px] h-[48px] mt-[41px] mb-[33px] ml-[45px] mr-[35px]`} />
+                <div className="w-[184px]  md:w-[200px] md:h-[132px] md:ml-0 ml-[119px] h-[122px] pt-[41px] pb-[33px] pl-[45px] 
+                pr-[35px] rounded-[15px] shadow-[0_15px_46px_8px_rgba(38,38,38,0.08)] md:pt-[41px] md:pb-[43px] md:pr-[51px]">
+                    <img src={TrustedBy2} className={`w-[104px] h-[48px]`} />
                 </div>
 
-                <div className="mt-[25px] w-[184px] ml-[-56px] h-[122px] rounded-[15px] shadow-[0_15px_46px_8px_rgba(38,38,38,0.08)]">
-                    <img src={Vector1} className={`w-[104px] h-[30px] mt-[51px] mb-[41px] ml-[48px] mr-[32px]`} />
+                <div className="w-[184px]  md:w-[200px] md:h-[132px] md:ml-0 ml-[-119px] h-[122px] rounded-[15px] pt-[51px] 
+                pb-[41px] pl-[48px] pr-[32px] shadow-[0_15px_46px_8px_rgba(38,38,38,0.08)]">
+                    <img src={TrustedBy3} className={`w-[104px] h-[30px]`} />
                 </div>
 
-                <div className="mt-[27px] w-[184px] ml-[56px] h-[122px] rounded-[15px] shadow-[0_15px_46px_8px_rgba(38,38,38,0.08)]">
-                    <img src={SBB} className={`w-[105px] h-[58px] mt-[37px] mb-[27px] ml-[48px] mr-[31px]`} />
+                <div className="w-[184px]  md:w-[200px] md:h-[132px] md:ml-0 ml-[119px] h-[122px] py-[50px] px-[36px]
+                rounded-[15px] shadow-[0_15px_46px_8px_rgba(38,38,38,0.08)]">
+                    <img src={TrustedBy4} className={`w-[128px] h-[32px]`} />
+                </div>
+
+                <div className="w-[184px]  md:w-[200px] md:h-[132px] md:ml-0 ml-[-119px] h-[122px] pt-[37px] pb-[27px] pl-[48px]
+                pr-[31px] md:py-[37px] md:pl-[48px] md:pr-[47px] rounded-[15px] shadow-[0_15px_46px_8px_rgba(38,38,38,0.08)]">
+                    <img src={TrustedBy5} className={`w-[105px] h-[58px]`} />
+                </div>
+
+                <div className="w-[184px] md:w-[200px] md:h-[132px] md:ml-0 ml-[119px] h-[122px] py-[44px] px-[40px]
+                rounded-[15px] shadow-[0_15px_46px_8px_rgba(38,38,38,0.08)]">
+                    <img src={TrustedBy6} className={`w-[120px] h-[44 px]`} />
+                </div>
+
+                <div className="w-[184px] h-[122px] md:w-[200px] md:h-[132px] md:ml-0 ml-[-119px] px-[15px] pt-[37px] pb-[36px] md:pt-[42px] rounded-[15px] 
+                shadow-[0_15px_46px_8px_rgba(38,38,38,0.08)] md:py-[42px] md:px-[23px]">
+                    <img src={TrustedBy1} className={`w-[154px] h-[49px]`} />
+                </div>
+
+                <div className="w-[184px]  md:w-[200px] md:h-[132px] md:ml-0 ml-[119px] h-[122px] pt-[41px] pb-[33px] pl-[45px] pr-[35px] 
+                rounded-[15px] shadow-[0_15px_46px_8px_rgba(38,38,38,0.08)] md:pt-[41px] md:pb-[43px] md:pr-[51px]">
+                    <img src={TrustedBy2} className={`w-[104px] h-[48px]`} />
                 </div>
             </div>
+
+            {/* Spacing */}
+            <div className="mt-12"></div>
         </section>
     )
 }
