@@ -10,8 +10,8 @@ export function Domain() {
         Domains
       </HomeTitle>
 
-      <div className="flex w-full xl:px-[66px] lg:px-[13px] md:px-[33px] h-full items-center max-sm:px-[16px]">
-        <div className="scroll-custom pb-[84px] flex overflow-x-auto overflow-y-hidden md:gap-[84px] w-full flex-nowrap">
+      <div className="flex w-full xl:px-[66px] lg:px-[13px] md:px-[33px] h-full items-center">
+        <div className="scroll-custom pb-[84px] flex overflow-x-auto overflow-y-hidden md:gap-[84px] max-sm:gap-[24px] w-full flex-nowrap">
           <DomainsCard
             title={"Offentclicher CVerkher"}
             imageUrl={ImgExample01}
