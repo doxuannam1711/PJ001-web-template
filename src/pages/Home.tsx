@@ -14,7 +14,7 @@ import {
 
 export default function () {
     return (
-        <div>
+        <div >
             <Header />
             <Hero />
             <OurMission />
