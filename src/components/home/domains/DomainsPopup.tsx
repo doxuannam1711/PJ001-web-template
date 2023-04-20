@@ -1,22 +1,23 @@
 import { CloseIcon } from "@components/vector/Close";
-import { ReactNode } from "react";
 import { DomainsPopupCard } from "./DomainsPopupCard";
 import { HomeTitle } from "../common/HomeTitle";
 import { HomeMobileTitle } from "../common/HomeMobileTitle";
+import { useFixedPopup } from "@hooks/index";
 export interface DomainPopup {
   isOpen: boolean;
   onClose: () => void;
 }
 export const DomainPopup = ({ isOpen, onClose }: DomainPopup) => {
+
   return (
     <>
       {isOpen && (
         <div
-          className={`w-screen h-screen z-[1000] fixed flex items-center overflow-y-scroll overflow-x-hidden mx-auto justify-center custom-scroll top-0 bottom-0 left-0 bg-[rgb(17,17,17,0.5)]   ${
-            isOpen ? "" : "hidden"
-          } `}
+
+          className={`w-screen h-screen z-[1000] fixed  flex items-center  mx-auto justify-center top-0 bottom-0 left-0 bg-[rgb(17,17,17,0.5)] overscroll-contain `}
         >
-          <div className="bg-primary-contrast min-h-[529px] w-[calc(100%-30px)] box-border rounded-[30px] md:flex md:flex-col md:justify-center md:items-center md:overflow-hidden xl:items-start xl:max-w-[1400px] xl:max-h-[691px]">
+
+          <div className=" bg-primary-contrast min-h-[529px] w-[calc(100%-30px)] box-border rounded-[30px] md:flex md:flex-col md:justify-center md:items-center md:overflow-hidden xl:items-start xl:max-w-[1400px] xl:max-h-[691px]">
             <div
               className="close flex justify-end w-full px-[15px] py-[15px] md:px-[27px] md:py-[21px]"
               onClick={onClose}
@@ -86,6 +87,7 @@ export const DomainPopup = ({ isOpen, onClose }: DomainPopup) => {
               />
             </div>
           </div>
+
         </div>
       )}
     </>

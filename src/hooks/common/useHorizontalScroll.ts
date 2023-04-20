@@ -4,6 +4,7 @@ export interface useHorizontalScroll {
   isOffsetItem?: boolean;
   paddingItemOffset?: number;
   areaCheckOffset?: number;
+  autoCenterItem?: boolean;
 }
 export function useHorizontalScroll<
   T extends HTMLElement,
@@ -14,11 +15,13 @@ export function useHorizontalScroll<
     isOffsetItem = false,
     paddingItemOffset = 0,
     areaCheckOffset = 20,
+    autoCenterItem = false,
   }: useHorizontalScroll = {
     offset: 0,
     isOffsetItem: false,
     paddingItemOffset: 0,
     areaCheckOffset: 20,
+    autoCenterItem: false,
   }
 ) {
   const elRef = useRef<T>(null);
@@ -40,7 +43,7 @@ export function useHorizontalScroll<
           }
         }
         let backToPos = false;
-       
+
         if (
           (Math.abs(el.scrollLeft - (el.scrollWidth - el.offsetWidth)) <= 5 &&
             e.deltaY > 0) ||
@@ -49,7 +52,8 @@ export function useHorizontalScroll<
           // Not stop, scroll pass
         } else {
           // Stop body scroll
-          e.preventDefault();
+          const body = document.body;
+          if (body.style.position != "fixed") e.preventDefault();
 
           if (
             Math.abs(offsetParent - document.documentElement.scrollTop) <=
@@ -63,12 +67,19 @@ export function useHorizontalScroll<
           }
         }
 
-        const value =
+        let value =
           el.scrollLeft +
           e.deltaY +
           (e.deltaY > 0 ? offset : -offset) +
           offsetItem;
-        
+        if (autoCenterItem) {
+          let itemsCount = el.children.length;
+          let widthPerItem = el.scrollWidth / itemsCount;
+          let pos =  e.deltaY>0?Math.floor(value / widthPerItem):Math.ceil(value / widthPerItem);
+          value = pos * widthPerItem;
+ 
+        }
+
         if (
           Math.abs(offsetParent - document.documentElement.scrollTop) <
             areaCheckOffset &&

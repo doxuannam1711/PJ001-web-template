@@ -1,16 +1,18 @@
 import { Button } from "@components/common";
 import { Logo2 } from "@components/vector";
 
+
 export interface RefreshedPopup {
     isOpen: boolean;
     onClose: () => void
 }
 
 export function RefreshedPopup({ isOpen, onClose }: RefreshedPopup) {
+
     return (
         <>
             {isOpen && <div
-                className="w-screen h-screen flex flex-row justify-center items-center text-center fixed top-0 left-0 z-[1000] overscroll-none ">
+                className="w-screen h-screen min-h-full popup-active flex flex-row justify-center items-center text-center fixed top-0 bottom-0 right-0 left-0 z-[1000] overscroll-none ">
                 <div onClick={onClose} className=" bg-[rgb(0,0,0,0.5)] w-full h-full absolute top-0 left-0 z-[0]"></div>
                 <div className="z-[1] mx-5 md:mx-0 w-[640px] sm:h-[520px] overflow-hidden bg-[url('src/assets/images/background_refreshedpopup2.png')] bg-no-repeat bg-cover flex-col flex rounded-[33.2474px] shadow-[0_15px_46px_8px_rgba(38,38,38,0.08)]">
                     <div className="relative flex justify-center items-center h-full md:w-[640px] bg-[url('src/assets/images/background_refreshedpopup.png')]">

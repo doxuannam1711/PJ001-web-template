@@ -1,6 +1,6 @@
 import { HomeTitle } from "./common/HomeTitle";
 import { ScrollInfo } from "./common/ScrollInfo";
-import { DomainsCard } from "./domains/domainsCard";
+import { DomainsCard } from "./domains/DomainsCard";
 import ImgExample01 from "/images/example/imgexample01.jpg";
 import { useHorizontalScroll } from "@hooks/index";
 
@@ -8,7 +8,8 @@ export function Domain() {
   const { elRef } = useHorizontalScroll<HTMLDivElement>({
     isOffsetItem: true,
     offset: -111,
-    areaCheckOffset: 500
+    areaCheckOffset: 500,
+    autoCenterItem: true
   })
 
   return (

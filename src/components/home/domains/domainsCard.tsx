@@ -1,5 +1,5 @@
 import { ButtonOutline } from "@components/common";
-import { usePopup } from "@hooks/index";
+import { useFixedPopup } from "@hooks/index";
 import { DomainPopup } from "./DomainsPopup";
 
 export interface DomainsCard {
@@ -14,9 +14,9 @@ export function DomainsCard({
   className = "",
   imageUrl = "",
 }: DomainsCard) {
-  const { isOpen, open, close } = usePopup()
+  const { isOpen, open, close } = useFixedPopup()
   return (
-    
+
     <>
       <DomainPopup isOpen={isOpen} onClose={close} />
       <div

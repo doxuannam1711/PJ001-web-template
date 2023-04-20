@@ -11,7 +11,7 @@ import {
     WorkWithUs,
 } from "@components/home";
 import { RefreshedPopup } from "@components/popup";
-import { usePopup } from "@hooks/index";
+import { usePopup,useFixedPopup } from "@hooks/index";
 import { useEffect } from "react";
 
 export default function () {
@@ -30,13 +30,13 @@ export default function () {
             <div className="overflow-hidden m-auto">
                 <Hero />
                 <OurMission />
-                <SocialBenefits />
+                <WhatWeDo />
                 <FocusPoint />
                 <Domain />
-                <Interested />
                 <TrustedBy />
-                <WhatWeDo />
                 <WorkWithUs />
+                <SocialBenefits />
+                <Interested />
             </div>
             <Footer />
         </>
