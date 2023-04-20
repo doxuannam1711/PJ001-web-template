@@ -1,3 +1,4 @@
+import { Cursor } from "@components/vector"
 import { useState } from "react"
 
 export interface Header {
@@ -31,10 +32,12 @@ export function Header({ }: Header) {
     let [open, setopen] = useState(false)
     return (
         <header className="fixed w-full justify-center shadow-[0_2px_4px_-1px_rgba(0,0,0,0.2)] md:flex">
+
             <div className="hidden max-w-[1440px] h-[69px] px-180 py-13 gap-[490px] justify-between flex-row items-center md:flex">
                 <a className="flex" href="/" title="logo">
-                    <img className="w-[42.26px] h-[43px] pr-1" srcSet="src\assets\images\logo-03.svg" alt="logo" />
-                    <div className="flex flex-col w-[42.26px] h-[43px] text-[8px] justify-center font-semibold">
+                    {/* <Logo2 size={43}></Logo2> */}
+                    <Cursor size={43} className=""></Cursor>
+                    <div className="ml-[6.8px] flex flex-col w-[42.26px] h-[43px] text-[8px] justify-center font-semibold">
                         <p>INFORMATION</p>
                         <p>CONSULTING</p>
                         <p>GROUP</p>
@@ -64,8 +67,8 @@ export function Header({ }: Header) {
                         )}
                         {open && (
                             <>
-                                <line x1="12" y1="20" x2="30" y2="33" stroke="#FFFFFF" stroke-width="2" />
-                                <line x1="12" y1="33" x2="30" y2="20" stroke="#FFFFFF" stroke-width="2" />
+                                <line x1="12" y1="20" x2="25" y2="33" stroke="#FFFFFF" stroke-width="2" />
+                                <line x1="12" y1="33" x2="25" y2="20" stroke="#FFFFFF" stroke-width="2" />
                             </>
                         )}
                     </g>

@@ -1,42 +1,127 @@
-import { Link } from "react-router-dom";
-import '@assets/css/footer.css'
-
+import { Bubble2, Cursor } from "@components/vector";
+import { ButtonOutline } from "./button/ButtonOutline";
 export interface Footer {
-    className?: string
 }
-export function Footer({ className = "" }: Footer) {
+
+const footerMenuData = [
+    {
+        title: "Home",
+        link: "#",
+    },
+    {
+        title: "Career",
+        link: "#",
+    },
+    {
+        title: "Jobs",
+        link: "#",
+    },
+    {
+        title: "About",
+        link: "#",
+    },
+]
+
+export function Footer() {
     return (
-        <footer className={`w-screen ${className}`}>
-            <div className={`flex justify-between max-w-[1400px] px-[4vw] py-[6.6vmax] m-auto`}>
-                <div className={`text-[24px] font-light`}>
-                    Stay safe! Bleibe in <br /> Verbindung!
+        <footer className="bg-primary-default">
+            <div className="md:flex absolute mt-[55px] ml-[114px] hidden">
+                <Cursor size={95.26}></Cursor>
+                <div className="flex flex-col w-[95.26px] h-[97px] text-[21px] text-primary-contrast justify-center font-semibold ml-[15.34px]">
+                    <p>INFORMATION</p>
+                    <p>CONSULTING</p>
+                    <p>GROUP</p>
                 </div>
-
-                <div className={`flex flex-col gap-8`}>
-                    <div className={`text-[24px] font-light`}>
-                        Fragen?
+            </div>
+            <div className="h-[802px] w-[100% flex-col flex justify-around">
+                <div className="flex-col justify-around">
+                    <div className="text-center flex justify-center md:hidden">
+                        <Cursor size={48.71}></Cursor>
+                        <div className="ml-[7.84px] flex flex-col w-[42.26px] h-[43px] text-[8px] text-primary-contrast justify-center font-semibold">
+                            <p>INFORMATION</p>
+                            <p>CONSULTING</p>
+                            <p>GROUP</p>
+                        </div>
                     </div>
-                    <Link to={'/contact'}>Kontakt</Link>
-                    <div className={`flex items-center gap-4`}>
-                        <a href="https://www.instagram.com/daenzerconsulting/" target={`_blank`}>
-                            <img src="/instagram.png" className={`w-[15px]`} />
-                        </a>
-                        <a href="https://www.linkedin.com/company/daenzer-consulting/" target={`_blank`}>
-                            <img src="/linkedin.svg" className={`w-[15px]`} />
-                        </a>
+                    <p className="text-[40px] font-bold leading-[48px] text-center text-primary-contrast mt-[23px] md:mt-[288px]">Let’s Connect.</p>
+                    <div className="mx-[88px] md:mx-[400px] w-[184px] md:w-auto h-0 border-solid border-[1px] border-primary-light mt-[11px] md:mt-[40px]"></div>
+                </div>
+                <div className="md:hidden text-center">
+                    <p className="text-[18.38px] font-semibold leading-[24.5px] text-center text-primary-contrast">
+                        Looking for an exciting career?<br />
+                        You’re One click away.
+                    </p>
+                    <ButtonOutline
+                        className="w-[224px] h-[48px] mt-[32px] mb-[44px]"
+                        textClassName="text-primary-contrast text-center"
+                        props={{
+                            onClick: () => console.log("Button clicked"),
+                            disabled: true
+                        }}>
+                        Join the adventure!
+                    </ButtonOutline>
+                    <p className="text-[18.38px] font-semibold leading-[24.5px] text-center text-primary-contrast">Looking for a collaboration?<br />
+                        We’re ready for it!
+                    </p>
+                    <ButtonOutline
+                        className="w-[224px] h-[48px] mt-[32px] mb-[44px]"
+                        textClassName="text-primary-contrast text-center"
+                        props={{
+                            onClick: () => console.log("Button clicked"),
+                            disabled: true
+                        }}>
+                        Contact us!
+                    </ButtonOutline>
+                    {/* <div className="text-primary-contrast w-[224] h-[48] border-2 border-solid border-primary-light text-center mt-[14px] mb-[44px]">Contact us!</div> */}
+                </div>
+                <div className="md:flex justify-center hidden">
+                    <div className="flex-col mr-[106px] text-right">
+                        <p className="text-[18.38px] font-semibold leading-[24.5px] text-primary-contrast text-right">
+                            Spannenden Karriere gesucht ?<br />
+                            Klicke hier! :)
+                        </p>
+                        <ButtonOutline
+                            className="w-[224px] h-[48px] mt-[16px] mb-[44px]"
+                            textClassName="text-primary-contrast text-center"
+                            props={{
+                                onClick: () => console.log("Button clicked"),
+                                disabled: true
+                            }}>
+                            Join the adventure!
+                        </ButtonOutline>
+                    </div>
+                    <div className="flex-col">
+                        <p className="text-[18.38px] font-semibold leading-[24.5px] text-primary-contrast">
+                            Willst du zusammenarbeiten?<br />
+                            Wir sind immer offen.
+                        </p>
+                        <ButtonOutline
+                            className="w-[224px] h-[48px] mt-[16px] mb-[44px]"
+                            textClassName="text-primary-contrast text-center"
+                            props={{
+                                onClick: () => console.log("Button clicked"),
+                                disabled: true
+                            }}>
+                            Kontaktiere uns!
+                        </ButtonOutline>
                     </div>
                 </div>
-
-                <div className={`flex flex-col gap-5`}>
-                    <Link to={'/blog'}>Blog</Link>
-                    <Link to={'/services'}>Services</Link>
-                    <Link to={'/team'}>Team</Link>
+                <div className="">
+                    <div className="mx-[88px] w-[184px] h-0 border-solid border-[1px] border-primary-light mb-[28px] md:hidden"></div>
+                    <ul className="flex text-primary-contrast gap-[23px] justify-center mb-[13px]">
+                        {footerMenuData.map(item => (
+                            <li className="hover:text-primary-light" key={item.title}>
+                                <a className="" href={item.link}>{item.title}</a>
+                            </li>
+                        ))}
+                    </ul>
+                    <div className="text-primary-contrast text-center hover:text-primary-light">
+                        <a href="">Office</a>
+                    </div>
                 </div>
-
-                <div className={`flex flex-col gap-5`}>
-                    <Link to={'/impressum'}>Impressum</Link>
-                    <Link to={'/datenschutz'}>Datenschutz</Link>
-                </div>
+            </div>
+            <div className="relative bottom-0 left-0 w-[100%] h-[6.33vh] overflow-hidden">
+                <Bubble2 size={400} className="w-[100%] h-[100%] object-cover object-top scale-[3] translate-y-[45px]"></Bubble2>
             </div>
         </footer>
     )

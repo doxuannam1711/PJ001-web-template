@@ -1,10 +1,12 @@
+import { Logo1 } from "@components/vector";
 
 
 export function Interested() {
     return (
         <section>
-            <div className="text-center h-[447px] w-[100%] bg-[url('src/assets/images/logo-01.svg')] bg-no-repeat bg-center scale-[75%]">
-            </div>
+            <Logo1></Logo1>
+            {/* <div className="text-center h-[447px] w-[100%] bg-[url('public/images/logo-03.svg')] bg-no-repeat bg-center scale-[75%]">
+            </div> */}
             <div className="hidden md:flex w-full max-w-[100%] flex-col items-center">
                 <p className="mx-[180px] text-center font-bold text-[44px] leading-[48px] ">
                     Interessiert uns kennenzulernen?<br />
