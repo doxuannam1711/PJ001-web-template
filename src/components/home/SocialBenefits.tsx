@@ -8,8 +8,8 @@ export function SocialBenefits() {
     return (
         <>
             <section
-                className="social-benefits-container overflow-hidden flex flex-col md:flex-row gap-[47px] sm:gap-[80px] md:gap-[110px] h-fit md:!h-[1116px] mb-[90px]  md:justify-between md:mb-0  md:pr-0 md:pl-[70px]">
-                <div className="pt-[109px]  px-[32px] md:px-0 md:pt-[304px] flex flex-col gap-[79px] w-full md:w-fit">
+                className="social-benefits-container overflow-hidden flex flex-col md:flex-row gap-[47px] sm:gap-[80px] md:gap-[110px] h-fit md:!h-[1116px] mb-[90px]  md:justify-between md:mb-0  md:pr-0 ">
+                <div className="pt-[109px]  px-[32px] md:px-0 md:pt-[304px] flex flex-col gap-[79px] w-full md:w-fit md:pl-[70px]">
                     <HomeTitle textClassName="text-black" className="hidden md:flex">
                         Social <span className="text-primary-light">Benefits</span>
                     </HomeTitle>

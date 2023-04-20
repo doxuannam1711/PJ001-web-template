@@ -81,6 +81,13 @@ html {
     background-color: #FF303E;
 }
 
+
+.scroll-mx-24::-webkit-scrollbar-track {
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .hide-scroll::-webkit-scrollbar {
     display: none;
