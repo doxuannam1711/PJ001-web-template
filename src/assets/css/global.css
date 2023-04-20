@@ -1,5 +1,8 @@
 @tailwind base;
 @tailwind components;
+<<<<<<< HEAD
+@tailwind utilities;
+=======
 @tailwind utilities;
 
 @font-face {
@@ -77,3 +80,4 @@ html {
     scrollbar-width: none;
     /* Firefox */
 }
+>>>>>>> main
