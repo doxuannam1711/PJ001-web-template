@@ -1,3 +1,4 @@
+import { RefreshedPopup } from "@components/popup";
 import { HomeTitle } from "./common/HomeTitle";
 import { ScrollInfo } from "./common/ScrollInfo";
 import { DomainsCard } from "./domains/domainsCard";
@@ -9,6 +10,7 @@ export function Domain() {
 
   return (
     <>
+     
       <section id="domain-container" className="domain flex flex-col gap-1 w-full justify-center h-fit md:min-h-screen mx-auto md:pl-[70px] max-md:pl-0">
         <HomeTitle textClassName="text-black" className="hidden md:flex">
           Domains
