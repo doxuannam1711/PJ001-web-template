@@ -8,7 +8,7 @@ export function SocialBenefits() {
     return (
         <>
             <section
-                className="social-benefits-container overflow-hidden flex flex-col md:flex-row gap-[47px] sm:gap-[80px] md:gap-[110px] h-fit md:!h-[1116px] mb-[90px]  md:justify-between md:mb-0  md:pr-0 md:pl-[70px]">
+                className="social-benefits-container overflow-hidden flex flex-col md:flex-row gap-[47px]   h-fit md:!h-[1116px] mb-[90px]  md:justify-between md:mb-0  md:pr-0 md:pl-[70px]">
                 <div className="pt-[109px]  px-[32px] md:px-0 md:pt-[304px] flex flex-col gap-[79px] w-full md:w-fit">
                     <HomeTitle textClassName="text-black" className="hidden md:flex">
                         Social <span className="text-primary-light">Benefits</span>
@@ -27,7 +27,7 @@ export function SocialBenefits() {
                     </div>
                 </div>
                 {/* No hide scroll now */}
-                <div className="social-benefits-cards flex flex-row md:flex-col overflow-x-auto hide-scroll-desktop scroll-custom   md:overflow-x-hidden md:overflow-y-auto h-fit md:h-[1026px] 
+                <div className="social-benefits-cards flex flex-row md:flex-col overflow-x-auto hide-scroll-desktop scroll-custom sm:md:overflow-x-hidden   md:overflow-x-hidden md:overflow-y-auto h-fit md:h-[1026px] 
            pb-[94px]  md:py-[242px] pl-[32px] md:pl-[55px] pr-[32px] md:pr-[105px]  gap-[42px]  w-full  md:w-fit relative scroll-mx-8">
                     <SocialBenefitsCard title="Hybrides Arbeiten" imageUrl={SocialLogoExample}>
                         Da wir den Wert von Freizeit und Erholung für unsere Mitarbeiter anerkennen, investiert unser Unternehmen in verschiedene Unterhaltungsmöglichkeiten, die es den Teammitgliedern ermöglichen, sich während ihrer Freizeit zu entspannen, aufzutanken und abzuschalten.
