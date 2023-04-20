@@ -41,7 +41,7 @@ export function Header({ }: Header) {
                     <ul className="flex items-center gap-x-[24px]">
                         {navMenuData.map(item => (
                             <li key={item.title}>
-                                <a className="flex text-[13px] font-normal leading-[19.5px] text-center tracking-[0.15px] uppercase" href={item.link}>{item.title}</a>
+                                <a className="flex text-[13px] font-[500] leading-[19.5px] text-center tracking-[0.15px] uppercase" href={item.link}>{item.title}</a>
                             </li>
                         ))}
                     </ul>
