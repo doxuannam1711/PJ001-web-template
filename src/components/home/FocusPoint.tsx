@@ -5,6 +5,7 @@ import { FocusPointCard } from "./focusPoint/FocusPointCard"
 import FocusPointExampleImage from '/images/example/focus-point-example-image.jpg'
 import { HomeMobileTitle } from "./common/HomeMobileTitle"
 import { useHorizontalScroll } from "@hooks/index"
+import { ScrollInfo } from "./common/ScrollInfo"
 
 
 export function FocusPoint() {
@@ -13,7 +14,7 @@ export function FocusPoint() {
     const onClickSetSelectedPoint = (point: number) => () => {
         setSelectedPoint(point)
     }
-    return <section className="md:pl-[70px] md:pr-0 pt-[81px] flex flex-col gap-[67px] md:gap-[81px] overflow-visible pb-[192px] md:pb-[415px] ">
+    return <section className="md:pl-[70px] md:pr-0 pt-[81px] flex flex-col gap-[67px] md:gap-[81px] overflow-visible pb-[192px] md:pb-[218px] ">
         <HomeTitle className="hidden md:flex">Konzentriert auf das Wesentliche. </HomeTitle>
         <HomeMobileTitle className="md:hidden">Focus Point</HomeMobileTitle>
         <div className="flex flex-row gap-[10px]">
@@ -44,6 +45,7 @@ export function FocusPoint() {
                 </FocusPointCard>
             </div>
         </div>
-        {/* No scroll */}
+        <ScrollInfo className="hidden md:flex !mt-[88px]" />
+     
     </section>
 }
