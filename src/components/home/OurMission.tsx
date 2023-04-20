@@ -22,6 +22,5 @@ export function OurMission() {
                 </p>
             </div>
         </section>
-
     );
 }

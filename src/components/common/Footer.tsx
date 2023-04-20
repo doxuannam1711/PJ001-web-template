@@ -1,9 +1,28 @@
-import { Bubble2, Cursor } from "@components/vector";
+import { Bubble2, Cursor, Logo2 } from "@components/vector";
 import { ButtonOutline } from "./button/ButtonOutline";
 export interface Footer {
-    className?: string
 }
-export function Footer({ className = "" }: Footer) {
+
+const footerMenuData = [
+    {
+        title: "Home",
+        link: "#",
+    },
+    {
+        title: "Career",
+        link: "#",
+    },
+    {
+        title: "Jobs",
+        link: "#",
+    },
+    {
+        title: "About",
+        link: "#",
+    },
+]
+
+export function Footer() {
     return (
         <footer className="bg-primary-default">
             <div className="md:flex absolute mt-[55px] ml-[114px] hidden">
@@ -17,12 +36,7 @@ export function Footer({ className = "" }: Footer) {
             <div className="h-[802px] w-[100% flex-col flex justify-around">
                 <div className="flex-col justify-around">
                     <div className="text-center flex justify-center md:hidden">
-                        <Cursor size={48.71}></Cursor>
-                        <div className="ml-[7.84px] flex flex-col w-[42.26px] h-[43px] text-[8px] text-primary-contrast justify-center font-semibold">
-                            <p>INFORMATION</p>
-                            <p>CONSULTING</p>
-                            <p>GROUP</p>
-                        </div>
+                        <Logo2 size={130}></Logo2>
                     </div>
                     <p className="text-[40px] font-bold leading-[48px] text-center text-primary-contrast mt-[23px] md:mt-[288px]">Let’s Connect.</p>
                     <div className="mx-[88px] md:mx-[400px] w-auto md:w-auto h-0 border-solid border-[1px] border-primary-light mt-[11px] md:mt-[40px]"></div>

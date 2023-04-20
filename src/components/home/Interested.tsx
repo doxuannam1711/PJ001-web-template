@@ -6,7 +6,7 @@ export function Interested() {
     return (
         <section className="">
             <div className="flex justify-center">
-                <Logo1 sizeDesktop={328.54} desktopClassName="" sizeMobile={360} mobileClassName="flex"></Logo1>
+                <Logo1 sizeDesktop={446.66} desktopClassName="" sizeMobile={325.64} mobileClassName="flex"></Logo1>
             </div>
             <div className="hidden md:flex w-full max-w-[100%] flex-col items-center">
                 <p className="mx-[180px] text-center font-bold text-[44px] leading-[48px] ">
