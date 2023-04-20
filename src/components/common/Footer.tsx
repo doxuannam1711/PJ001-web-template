@@ -26,12 +26,7 @@ export function Footer() {
     return (
         <footer className="bg-primary-default">
             <div className="md:flex absolute mt-[55px] ml-[114px] hidden">
-                <Cursor size={95.26}></Cursor>
-                <div className="flex flex-col w-[95.26px] h-[97px] text-[21px] text-primary-contrast justify-center font-semibold ml-[15.34px]">
-                    <p>INFORMATION</p>
-                    <p>CONSULTING</p>
-                    <p>GROUP</p>
-                </div>
+                <Logo2 size={270}></Logo2>
             </div>
             <div className="h-[802px] w-[100% flex-col flex justify-around">
                 <div className="flex-col justify-around">
