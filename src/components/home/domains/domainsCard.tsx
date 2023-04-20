@@ -16,10 +16,10 @@ export function DomainsCard({
   return (
     <div
       className={`
-        dcard flex-col grow items-center w-full md:min-h-[80vh] xl:gap-[84px] md:gap-[64px] sm:px-[90px]  lg:flex-row-reverse md:items-center flex-1 flex ${className}
+        flex-col grow items-center w-full md:min-h-[80vh] xl:gap-[84px] md:gap-[64px] lg:flex-row-reverse md:items-center md:justify-center md:basis-full flex-1 md:px-[20%] flex ${className}
     `}
     >
-      <div className="image px-[88px] md:px-0 md:max-h-[100vh] max-sm:h-full md:w-[460px] w-full flex justify-center overflow-hidden">
+      <div className="px-[88px] md:px-0 md:max-h-[100vh] max-sm:h-full md:w-[460px] w-full flex justify-center overflow-hidden">
         <img src={imageUrl} alt="" className="image-mask h-full object-cover" />
       </div>
 

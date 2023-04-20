@@ -31,7 +31,7 @@ const navMenuData = [
 export function Header({ }: Header) {
     let [open, setopen] = useState(false)
     return (
-        <header className="fixed w-full justify-center shadow-[0_2px_4px_-1px_rgba(0,0,0,0.2)] md:flex">
+        <header className="fixed w-full justify-center shadow-[0_2px_4px_-1px_rgba(0,0,0,0.2)] bg-primary-contrast z-[999] md:flex">
 
             <div className="hidden max-w-[1440px] h-[69px] px-180 py-13 sm:gap-[200px] lg:gap-[490px] justify-between flex-row items-center md:flex">
                 <a className="flex" href="/" title="logo">
