@@ -12,21 +12,24 @@ export default {
         dark: "#610910",
         light: "#FF303E"
       },
+      error: {
+        light: "#EF5350"
+      },
       black: "black"
     },
-    fontWeight:{
-      thin:'100',
-      light:'300',
-      normal:'400',
-      semibold:'600',
-      bold:'700',
+    fontWeight: {
+      thin: '100',
+      light: '300',
+      normal: '400',
+      semibold: '600',
+      bold: '700',
     },
 
     extend: {
       fontFamily: {
         primary: ['montserrat', 'sans-serif'],
       },
-      dropShadow:{
+      dropShadow: {
         'exl': '0 8px 6px rgba(0, 0, 0, 0.5)'
       }
     },

@@ -4,10 +4,11 @@ import WhatWeDo2 from '/images/example/what-we-do-2.png'
 import WhatWeDo3 from '/images/example/what-we-do-3.png'
 import { HomeTitle } from "./common/HomeTitle";
 import { WhatWeDoCard } from "./whatWeDo/WhatWeDoCard";
+import { ScrollInfo } from "./common/ScrollInfo";
 
 export function WhatWeDo() {
     return (
-        <section className="flex flex-col w-full justify-center min-h-screen mx-auto md:pl-[70px]">
+        <section className="mb-[213px] md:mb-0">
             <HomeMobileTitle className="md:hidden mt-20">What We <span className="text-primary-light">Do</span></HomeMobileTitle>
 
             <HomeTitle textClassName="text-black" className="hidden md:flex md:pl-[70px]">
@@ -15,8 +16,8 @@ export function WhatWeDo() {
             </HomeTitle>
 
             <div className="card mt-[45px] h-full w-full">
-                <div className="card-item flex flex-row  md:gap-x-[75px] pb-[71px] gap-x-[53px]
-                 overflow-x-auto overflow-y-hidden w-full">
+                <div className="card-item flex flex-row md:gap-x-[75px] pb-[71px] gap-x-[53px] scroll-mx-8
+                 overflow-x-auto overflow-y-hidden w-full md:justify-center hide-scroll-desktop scroll-custom md:mx-0 mx-[20px]">
                     <WhatWeDoCard title="Process Engineering" imageUrl={WhatWeDo1}>
                         This is a brief explanation of the service with USP and an attractive product value for it.
                     </WhatWeDoCard>
@@ -32,6 +33,9 @@ export function WhatWeDo() {
                     </WhatWeDoCard>
                 </div>
             </div>
+
+            {/* scroll */}
+            <ScrollInfo className="md:mt-[185px] md:mb-[154px] hidden md:flex"></ScrollInfo>
         </section>
     )
 }

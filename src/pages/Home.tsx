@@ -15,18 +15,15 @@ import {
 export default function () {
 
     return (
-        <div className="overflow-hidden">
+        <div className="overflow-x-hidden">
             <BackToTop />
             <Header />
             <Hero />
             <OurMission />
             <WhatWeDo />
             <FocusPoint />
-
-
             <Domain />
             <TrustedBy />
-
             <WorkWithUs />
             <SocialBenefits />
             <Interested />
