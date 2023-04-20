@@ -26,15 +26,15 @@ export function Footer() {
     return (
         <footer className="bg-primary-default">
             <div className="md:flex absolute mt-[55px] ml-[114px] hidden">
-                <Logo2 size={270}></Logo2>
+                <Logo2 size={265}></Logo2>
             </div>
             <div className="h-[802px] w-[100% flex-col flex justify-around">
                 <div className="flex-col justify-around">
-                    <div className="text-center flex justify-center md:hidden">
-                        <Logo2 size={130}></Logo2>
+                    <div className="flex text-center justify-center md:hidden">
+                        <Logo2 size={140}></Logo2>
                     </div>
-                    <p className="text-[40px] font-bold leading-[48px] text-center text-primary-contrast mt-[23px] md:mt-[288px]">Let’s Connect.</p>
-                    <div className="mx-[88px] md:mx-[400px] w-auto md:w-auto h-0 border-solid border-[1px] border-primary-light mt-[11px] md:mt-[40px]"></div>
+                    <p className="text-[40px] md:text-[60px] font-bold leading-[48px] text-center text-primary-contrast mt-[23px] md:mt-[288px]">Let’s Connect.</p>
+                    <div className="md:mx-[400px] mt-[11px] mx-[88px] md:w-auto h-0 border-solid border-[1px] border-primary-light md:mt-[40px]"></div>
                 </div>
                 <div className="md:hidden text-center">
                     <p className="text-[18.38px] font-semibold leading-[24.5px] text-center text-primary-contrast">
@@ -42,8 +42,8 @@ export function Footer() {
                         You’re One click away.
                     </p>
                     <ButtonOutline
-                        className="w-[224px] h-[48px] mt-[32px] mb-[44px]"
-                        textClassName="text-primary-contrast text-center"
+                        className="w-[224px] h-[48px] mt-[14px] mb-[44px]"
+                        textClassName="text-primary-contrast text-center !font-[500] !leading-[20.72px]"
                         props={{
                             onClick: () => console.log("Button clicked"),
                             disabled: true
@@ -54,25 +54,24 @@ export function Footer() {
                         We’re ready for it!
                     </p>
                     <ButtonOutline
-                        className="w-[224px] h-[48px] mt-[32px] mb-[44px]"
-                        textClassName="text-primary-contrast text-center"
+                        className="w-[224px] h-[48px] mt-[14px]"
+                        textClassName="text-primary-contrast text-center !font-[500] !leading-[20.72px]"
                         props={{
                             onClick: () => console.log("Button clicked"),
                             disabled: true
                         }}>
                         Contact us!
                     </ButtonOutline>
-                    {/* <div className="text-primary-contrast w-[224] h-[48] border-2 border-solid border-primary-light text-center mt-[14px] mb-[44px]">Contact us!</div> */}
                 </div>
                 <div className="md:flex justify-center hidden">
                     <div className="flex-col mr-[106px] text-right">
-                        <p className="text-[18.38px] font-semibold leading-[24.5px] text-primary-contrast text-right">
+                        <p className="text-[24px] font-semibold leading-[32px] text-primary-contrast text-right">
                             Spannenden Karriere gesucht ?<br />
                             Klicke hier! :)
                         </p>
                         <ButtonOutline
                             className="w-[224px] h-[48px] mt-[16px] mb-[44px]"
-                            textClassName="text-primary-contrast text-center"
+                            textClassName="text-primary-contrast text-center text-[17px] !font-[500] !leading-[20.72px]"
                             props={{
                                 onClick: () => console.log("Button clicked"),
                                 disabled: true
@@ -81,13 +80,13 @@ export function Footer() {
                         </ButtonOutline>
                     </div>
                     <div className="flex-col">
-                        <p className="text-[18.38px] font-semibold leading-[24.5px] text-primary-contrast">
+                        <p className="text-[24px] font-semibold leading-[32px] text-primary-contrast text-left">
                             Willst du zusammenarbeiten?<br />
                             Wir sind immer offen.
                         </p>
                         <ButtonOutline
                             className="w-[224px] h-[48px] mt-[16px] mb-[44px]"
-                            textClassName="text-primary-contrast text-center"
+                            textClassName="text-primary-contrast text-center text-[17px] !font-[500] !leading-[20.72px]"
                             props={{
                                 onClick: () => console.log("Button clicked"),
                                 disabled: true
@@ -100,12 +99,12 @@ export function Footer() {
                     <div className="mx-[88px] w-auto h-0 border-solid border-[1px] border-primary-light mb-[28px] md:hidden"></div>
                     <ul className="flex text-primary-contrast gap-[23px] justify-center mb-[13px]">
                         {footerMenuData.map(item => (
-                            <li className="hover:text-primary-light" key={item.title}>
+                            <li className="hover:text-primary-light text-[17px] font-[500] leading-[25px]" key={item.title}>
                                 <a className="" href={item.link}>{item.title}</a>
                             </li>
                         ))}
                     </ul>
-                    <div className="text-primary-contrast text-center hover:text-primary-light">
+                    <div className="text-primary-contrast text-center hover:text-primary-light text-[17px] font-[500] leading-[25px]">
                         <a href="">Office</a>
                     </div>
                 </div>
