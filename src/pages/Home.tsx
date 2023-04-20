@@ -14,7 +14,7 @@ import {
 
 export default function () {
     return (
-        <div>
+        <div className="overflow-hidden">
             <BackToTop/>
             <Header />
             <Hero />
