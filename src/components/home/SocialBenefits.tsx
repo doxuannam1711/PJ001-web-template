@@ -4,9 +4,11 @@ import { SocialBenefitsCard } from "./socialBenefits/SocialBenefitsCard";
 import SocialLogoExample from '/images/example/logo-example-social-benefits.png'
 
 export function SocialBenefits() {
+
     return (
         <>
-            <section className="flex flex-col md:flex-row gap-[47px] md:gap-[110px] h-fit mb-[90px] md:justify-between md:mb-0  md:pr-0 md:pl-[70px]">
+            <section
+                className="social-benefits-container overflow-hidden flex flex-col md:flex-row gap-[47px] sm:gap-[80px] md:gap-[110px] h-fit md:!h-[1116px] mb-[90px]  md:justify-between md:mb-0  md:pr-0 md:pl-[70px]">
                 <div className="pt-[109px]  px-[32px] md:px-0 md:pt-[304px] flex flex-col gap-[79px] w-full md:w-fit">
                     <HomeTitle textClassName="text-black" className="hidden md:flex">
                         Social <span className="text-primary-light">Benefits</span>
@@ -25,8 +27,8 @@ export function SocialBenefits() {
                     </div>
                 </div>
                 {/* No hide scroll now */}
-                <div className="flex flex-row md:flex-col overflow-x-auto hide-scroll  md:overflow-x-hidden md:overflow-y-auto h-fit md:h-[1026px] 
-           pb-[94px]  md:py-[242px] pl-[32px] md:pl-[55px] pr-[32px] md:pr-[105px]   gap-[42px]  w-full md:w-fit ">
+                <div className="social-benefits-cards flex flex-row md:flex-col overflow-x-auto hide-scroll-desktop scroll-custom   md:overflow-x-hidden md:overflow-y-auto h-fit md:h-[1026px] 
+           pb-[94px]  md:py-[242px] pl-[32px] md:pl-[55px] pr-[32px] md:pr-[105px]  gap-[42px]  w-full  md:w-fit relative">
                     <SocialBenefitsCard title="Hybrides Arbeiten" imageUrl={SocialLogoExample}>
                         Da wir den Wert von Freizeit und Erholung für unsere Mitarbeiter anerkennen, investiert unser Unternehmen in verschiedene Unterhaltungsmöglichkeiten, die es den Teammitgliedern ermöglichen, sich während ihrer Freizeit zu entspannen, aufzutanken und abzuschalten.
                     </SocialBenefitsCard>
@@ -36,12 +38,18 @@ export function SocialBenefits() {
                     <SocialBenefitsCard title="Starke Firmenkultur" imageUrl={SocialLogoExample}>
                         This is a brief explanation of the service with USP and an attractive product value for the client. This is a brief explanation of the service with USP.
                     </SocialBenefitsCard>
+                    <SocialBenefitsCard title="Starke" imageUrl={SocialLogoExample}>
+                        This is a brief explanation of the service with USP and an attractive product value for the client. This is a brief explanation of the service with USP.
+                    </SocialBenefitsCard>
+                    <SocialBenefitsCard title="Firmenkultur" imageUrl={SocialLogoExample}>
+                        This is a brief explanation of the service with USP and an attractive product value for the client. This is a brief explanation of the service with USP.
+                    </SocialBenefitsCard>
                 </div>
 
                 {/* Add hor scroll and add scroll block */}
-                <ScrollInfo className="md:hidden"/>
+                <ScrollInfo className="md:hidden" />
             </section>
-      
+
         </>
     )
 }
