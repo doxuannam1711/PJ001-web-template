@@ -1,32 +1,29 @@
+import { ButtonOutline } from "@components/common";
 import { Cursor, CursorMask } from "@components/vector";
 
-export interface domainsCard {
+export interface DomainsCard {
   title: string;
   content: string;
-  children: string;
   className?: string;
-  typeName?: string;
   imageUrl?: string;
 }
 export function DomainsCard({
   title,
-  children,
   content = "",
   className = "",
-  typeName = "",
   imageUrl = "",
-}: domainsCard) {
+}: DomainsCard) {
   return (
     <div
       className={`
-        dcard flex-col grow items-center w-full md:min-h-[80vh] md:gap-[84px] md:px-[90px] md:flex-row-reverse md:items-center flex-1 flex ${className}
+        dcard flex-col grow items-center w-full md:min-h-[80vh] xl:gap-[84px] md:gap-[64px] sm:px-[90px]  lg:flex-row-reverse md:items-center flex-1 flex ${className}
     `}
     >
       <div className="image px-[88px] md:px-0 md:max-h-[100vh] max-sm:h-full md:w-[460px] w-full flex justify-center overflow-hidden">
         <img src={imageUrl} alt="" className="image-mask h-full object-cover" />
       </div>
 
-      <div className="content text-center mt-[40px] md:text-start md:flex md:flex-col w-[400px]">
+      <div className="content text-center mt-[40px] lg:text-start md:flex md:flex-col lg:items-start w-[400px]">
         <h2 className="font-bold text-[30px] md:text-[44px] md:leading-[48px] md:p-0 px-[85px] leading-[36px]">
           {title}
         </h2>
@@ -34,7 +31,7 @@ export function DomainsCard({
           {content}
         </p>
         {/* button */}
-        <button>Đây là button</button>
+        <ButtonOutline children={"Referenzen Entdecken"} textClassName="text-[17px] py-[14px] px-[28px]" className="mt-[33px]"/>
       </div>
     </div>
   );

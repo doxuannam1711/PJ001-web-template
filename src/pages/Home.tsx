@@ -1,5 +1,5 @@
 
-import { Footer, Header } from "@components/common";
+import { BackToTop, Footer, Header } from "@components/common";
 import {
     Domain,
     FocusPoint,
@@ -14,7 +14,8 @@ import {
 
 export default function () {
     return (
-        <div >
+        <div className="overflow-hidden">
+            <BackToTop/>
             <Header />
             <Hero />
             <OurMission />

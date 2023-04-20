@@ -2,7 +2,7 @@ import { Bubble2, Bubble1 } from "@components/vector";
 
 export function Hero() {
   return (
-    <section className="hero-banner flex flex-col items-center gap-1 w-full min-h-screen px-[5px] mx-auto">
+    <section className="hero-banner flex flex-col items-center gap-1 w-full min-h-screen px-[5px] mx-auto md:mb-[250px] mt-[60px]">
       <Bubble2 className="md:w-[760px] max-md:w-[365px]" textClassName="md:flex md:flex-col">
         <div className="text-[56px] !font-semibold text-primary-contrast md:text-[100px] w-full flex flex-col items-center">
           <div className="title-content color-primary-contrast drop-shadow-exl leading-none shadow-black md:ml-[-280px]">
