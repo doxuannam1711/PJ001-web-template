@@ -1,4 +1,4 @@
-import { Cursor, Logo2 } from "@components/vector"
+mport { Cursor, Logo2 } from "@components/vector"
 import { useState } from "react"
 
 export interface Header {
