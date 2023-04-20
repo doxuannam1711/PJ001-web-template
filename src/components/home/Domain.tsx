@@ -1,7 +1,7 @@
 import { Bubble1, Cursor } from "@components/vector";
 import { HomeTitle } from "./common/HomeTitle";
 import { DomainsCard } from "./domains/domainsCard";
-import ImgExample01 from "public/images/example/imgexample01.jpg";
+import ImgExample01 from "/images/example/imgexample01.jpg";
 
 export function Domain() {
   return (
@@ -11,24 +11,21 @@ export function Domain() {
       </HomeTitle>
 
       <div className="card flex w-full md:px-[290px] h-full">
-        <div className="card-item pb-[84px] flex overflow-x-auto overflow-y-hidden gap-[42px] ">
+        <div className="card-item pb-[84px] flex overflow-x-auto overflow-y-hidden gap-[42px] w-full">
           <DomainsCard
             title={"Offentclicher CVerkher"}
-            children={""}
             imageUrl={ImgExample01}
             content="ICG revolutioniert den Verkehrssektor durch innovative IT-Lösungen für nachhaltige Mobilität. Wir gestalten die Zukunft der Mobilität nach den Bedürfnissen unserer Gesellschaft."
           />
 
           <DomainsCard
             title={"Offentclicher CVerkhsadadser"}
-            children={""}
             imageUrl={ImgExample01}
             content="ICG revolutioniert den Verkehrssektor durch innovative IT-Lösungen für nachhaltige Mobilität. Wir gestalten die Zukunft der Mobilität nach den Bedürfnissen unserer Gesellschaft."
           />
 
           <DomainsCard
             title={"Offentclicher CVerkhsadadser"}
-            children={""}
             imageUrl={ImgExample01}
             content="ICG revolutioniert den Verkehrssektor durch innovative IT-Lösungen für nachhaltige Mobilität. Wir gestalten die Zukunft der Mobilität nach den Bedürfnissen unserer Gesellschaft."
           />

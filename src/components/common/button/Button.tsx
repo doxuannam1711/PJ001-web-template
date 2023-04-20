@@ -9,7 +9,7 @@ export interface Button {
 export function Button({ className = "", textClassName = "", children, props }: Button) {
 
     return <button  {...props}
-        className={`bg-primary-main hover:bg-primary-dark active:bg-primary-light rounded-[24px] ${className}`}>
+        className={`bg-primary-main hover:bg-primary-dark active:bg-primary-light rounded-full ${className}`}>
         <p className={`text-primary-contrast text-[17px] leading-[21px] font-medium text-center ${textClassName}`}>{children}</p>
     </button>
 }

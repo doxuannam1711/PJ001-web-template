@@ -1,21 +1,18 @@
+import { ButtonOutline } from "@components/common";
 import { Cursor, CursorMask } from "@components/vector";
 
-export interface domainsCard {
+export interface DomainsCard {
   title: string;
   content: string;
-  children: string;
   className?: string;
-  typeName?: string;
   imageUrl?: string;
 }
 export function DomainsCard({
   title,
-  children,
   content = "",
   className = "",
-  typeName = "",
   imageUrl = "",
-}: domainsCard) {
+}: DomainsCard) {
   return (
     <div
       className={`
@@ -34,7 +31,7 @@ export function DomainsCard({
           {content}
         </p>
         {/* button */}
-        <button>Đây là button</button>
+        <ButtonOutline children={"Referenzen Entdecken"}  textClassName="text-[17px] py-[14px] px-[28px]" className="mt-[33px]"/>
       </div>
     </div>
   );
