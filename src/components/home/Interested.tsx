@@ -7,10 +7,10 @@ export function Interested() {
     return (
         <section className="">
             <div className="flex justify-center">
-                <Logo1 sizeDesktop={446.66} desktopClassName="" sizeMobile={325.64} mobileClassName="flex"></Logo1>
+                <Logo1 sizeDesktop={496.34} desktopClassName="" sizeMobile={325.64} mobileClassName="flex"></Logo1>
             </div>
             <div className="hidden md:flex w-full max-w-[100%] flex-col items-center">
-                <p className="mx-[180px] text-center font-bold text-[44px] leading-[48px] ">
+                <p className="mx-[180px] text-center font-bold text-[44px] leading-[48px] md:mt-[-30px]">
                     Interessiert uns kennenzulernen?<br />
                     Bei einem Kaffi oder Bier?<br />
                     Wir empfangen dich gerne!
@@ -30,8 +30,8 @@ export function Interested() {
                 </ButtonOutline>
             </div>
 
-            <div className="flex-col flex items-center md:hidden mx-[32px]">
-                <p className="text-center font-bold text-[23px] leading-[32px] tracking-[-0.5px]">
+            <div className="flex-col flex items-center md:hidden mx-[32px] ">
+                <p className="text-center text-typo-h3 ">
                     Interessiert? <br />
                     Wir freuen uns immer darauf, neue Talente kennenzulernen!
                 </p>
