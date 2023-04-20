@@ -39,9 +39,9 @@ export function SocialBenefits() {
                 </div>
 
                 {/* Add hor scroll and add scroll block */}
-                <ScrollInfo className="md:hidden"/>
+                <ScrollInfo className="md:hidden" />
             </section>
-      
+
         </>
     )
 }
