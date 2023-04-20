@@ -2,19 +2,20 @@ import { Bubble1 } from "@components/vector";
 import { HomeMobileTitle } from "./common/HomeMobileTitle";
 import { Button, ButtonOutline } from "@components/common";
 import { HomeTitle } from "./common/HomeTitle";
+import { ScrollInfo } from "./common/ScrollInfo";
 
 
 export function WorkWithUs() {
     return (
-        <section className="flex flex-col w-full justify-center min-h-screen mx-auto md:pl-[70px] md:relative">
+        <section>
             <HomeMobileTitle className="md:hidden mt-20">ICG <span className="text-primary-light">x</span> Career</HomeMobileTitle>
 
             {/* Bubbles */}
-            <div className="w-full flex flex-col justify-center items-center">
+            <div className="w-full flex flex-col justify-center items-center md:relative">
                 {/* Bubble Growth */}
-                <div className="mt-[587.66px] md:absolute md:left-[10%] md:top-[-20%]">
+                <div className="mt-[200px] md:absolute md:left-[90px] md:top-[200px]">
                     <Bubble1 size={423.34}>
-                        <div className="z-[1] w-[300.86px] h-[97.05px] absolute
+                        <div className="w-[300.86px] h-[97.05px]
                         font-semibold text-primary-contrast tracking-[-0.91px] leading-[72.79px] rotate-[-8.43deg] 
                         text-[66.12px] pl-[27px]">
                             Growth
@@ -23,9 +24,9 @@ export function WorkWithUs() {
                 </div>
 
                 {/* Bubble Vibes */}
-                <div className="mt-[96px] md:absolute md:left-[62%] md:top-[40%]">
-                    <Bubble1 size={285} className="ml-[96px]">
-                        <div className="z-[1] w-[276px] h-[89.03px] absolute
+                <div className="mt-[96px] md:absolute">
+                    <Bubble1 size={285} className="ml-[96px] md:absolute md:left-[250px] md:top-[370px]">
+                        <div className="w-[276px] h-[89.03px]
                         font-semibold text-primary-contrast tracking-[-0.81px] leading-[64.62px] rotate-[7.22deg] 
                         text-[58.7px] pl-[46px]">
                             Vibes
@@ -34,9 +35,9 @@ export function WorkWithUs() {
                 </div>
 
                 {/* Bubble Vorzuge */}
-                <div className="mt-[155.98px] md:absolute md:left-[72%] md:top-[-26%]">
+                <div className="mt-[155.98px] md:absolute md:right-[-24px] top-[-200px]">
                     <Bubble1 size={384}>
-                        <div className="z-[1] w-[251.16px] h-[81.02px] absolute
+                        <div className="w-[251.16px] h-[81.02px]
                         font-semibold text-primary-contrast tracking-[-0.76px] leading-[60.76px] rotate-[-5.25deg] 
                         text-[55.19px] pl-[2px]">
                             Vorzüge
@@ -84,8 +85,8 @@ export function WorkWithUs() {
                 </div>
             </div>
 
-            {/* Spacing */}
-            <div className="mt-96"></div>
+           {/* scroll */}
+           <ScrollInfo className="mb-[175px] mt-[155px] md:mt-[264px] md:mb-[373px]"></ScrollInfo>
         </section>
     )
 }

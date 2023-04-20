@@ -2,6 +2,7 @@ import { ButtonOutline } from "@components/common";
 import { RefreshedPopup } from "@components/popup";
 import { usePopup } from "@hooks/index";
 import { useState } from "react";
+import { DomainPopup } from "./DomainsPopup";
 
 export interface DomainsCard {
   title: string;
@@ -18,7 +19,12 @@ export function DomainsCard({
 
 
 
-  const {isOpen, open, close } = usePopup({init: false});
+  const [isOpen, setIsOpen] = useState(false)
+
+
+  const open = () =>{
+    return setIsOpen(true)
+  }
 
   return (
     <div
@@ -39,7 +45,8 @@ export function DomainsCard({
         </p>
         {/* button */}
         <ButtonOutline onClick={open} children={"Referenzen Entdecken"} textClassName="text-[17px] py-[14px] px-[28px]" className="mt-[33px]"/>
-        <RefreshedPopup isOpen={isOpen} onClose={close}/>
+        
+        <DomainPopup isOpen={true}/>
 
       </div>
     </div>
