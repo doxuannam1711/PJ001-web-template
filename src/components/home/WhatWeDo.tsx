@@ -7,7 +7,7 @@ import { WhatWeDoCard } from "./whatWeDo/WhatWeDoCard";
 
 export function WhatWeDo() {
     return (
-        <section className="flex flex-col w-full justify-center min-h-screen mx-auto md:pl-[70px]">
+        <section>
             <HomeMobileTitle className="md:hidden mt-20">What We <span className="text-primary-light">Do</span></HomeMobileTitle>
 
             <HomeTitle textClassName="text-black" className="hidden md:flex md:pl-[70px]">
@@ -15,8 +15,8 @@ export function WhatWeDo() {
             </HomeTitle>
 
             <div className="card mt-[45px] h-full w-full">
-                <div className="card-item flex flex-row  md:gap-x-[75px] pb-[71px] gap-x-[53px]
-                 overflow-x-auto overflow-y-hidden w-full">
+                <div className="card-item flex flex-row md:gap-x-[75px] pb-[71px] gap-x-[53px]
+                 overflow-x-auto overflow-y-hidden w-full justify-center">
                     <WhatWeDoCard title="Process Engineering" imageUrl={WhatWeDo1}>
                         This is a brief explanation of the service with USP and an attractive product value for it.
                     </WhatWeDoCard>
