@@ -1,4 +1,4 @@
-mport { Cursor, Logo2 } from "@components/vector"
+import { Cursor, Logo2 } from "@components/vector"
 import { useState } from "react"
 
 export interface Header {
@@ -36,7 +36,7 @@ export function Header({ }: Header) {
             <div className="hidden max-w-[1440px] h-[69px] px-180 py-13 sm:gap-[200px] lg:gap-[490px] justify-between flex-row items-center md:flex">
                 <a className="flex" href="/" title="logo">
                     {/* <Cursor size={43} className=""></Cursor> */}
-                    <Logo2 size={100} className=""></Logo2>
+                    <Logo2 size={43} className=""></Logo2>
                     <div className="ml-[6.8px] flex flex-col w-[42.26px] h-[43px] text-[8px] justify-center font-semibold">
                         <p>INFORMATION</p>
                         <p>CONSULTING</p>
