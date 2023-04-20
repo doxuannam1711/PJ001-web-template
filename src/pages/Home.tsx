@@ -22,11 +22,8 @@ export default function () {
             <OurMission />
             <WhatWeDo />
             <FocusPoint />
-
-
             <Domain />
             <TrustedBy />
-
             <WorkWithUs />
             <SocialBenefits />
             <Interested />
