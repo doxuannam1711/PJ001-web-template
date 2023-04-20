@@ -51,14 +51,15 @@ html {
 
 .scroll-custom::-webkit-scrollbar {
     height: 10px;
-    width: 100px;
+
 }
 
 .scroll-custom {
     @apply snap-x scroll-px-[auto] overscroll-auto
 }
-.scroll-custom > * {
-    @apply snap-start 
+
+.scroll-custom>* {
+    @apply snap-start
 }
 
 
@@ -67,6 +68,12 @@ html {
     background-color: rgba(193, 18, 31, 0.3);
     border-radius: 25px;
     background-clip: padding-box;
+
+}
+
+.scroll-mx-8::-webkit-scrollbar-track {
+    margin-left: 32px;
+    margin-right: 32px;
 }
 
 .scroll-custom::-webkit-scrollbar-thumb {
@@ -101,4 +108,3 @@ html {
 .hide-scroll-desktop {
     @apply md:hide-scroll-ms
 }
-

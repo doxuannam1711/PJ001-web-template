@@ -28,7 +28,7 @@ export function SocialBenefits() {
                 </div>
                 {/* No hide scroll now */}
                 <div className="social-benefits-cards flex flex-row md:flex-col overflow-x-auto hide-scroll-desktop scroll-custom   md:overflow-x-hidden md:overflow-y-auto h-fit md:h-[1026px] 
-           pb-[94px]  md:py-[242px] pl-[32px] md:pl-[55px] pr-[32px] md:pr-[105px]  gap-[42px]  w-full  md:w-fit relative">
+           pb-[94px]  md:py-[242px] pl-[32px] md:pl-[55px] pr-[32px] md:pr-[105px]  gap-[42px]  w-full  md:w-fit relative scroll-mx-8">
                     <SocialBenefitsCard title="Hybrides Arbeiten" imageUrl={SocialLogoExample}>
                         Da wir den Wert von Freizeit und Erholung für unsere Mitarbeiter anerkennen, investiert unser Unternehmen in verschiedene Unterhaltungsmöglichkeiten, die es den Teammitgliedern ermöglichen, sich während ihrer Freizeit zu entspannen, aufzutanken und abzuschalten.
                     </SocialBenefitsCard>
