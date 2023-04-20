@@ -13,7 +13,7 @@ export function FocusPointCard({
     className
 }: FocusPointCard) {
     return <div
-        className={`flex flex-col max-md:scroll-mx-[32px] shadow-[0px_15px_46px_8px_rgba(38,38,38,0.08)] h-fit rounded-[34px]  min-w-[286.39px] overflow-hidden ${className}`}>
+        className={`flex flex-col scroll-mx-[32px] md:scroll-mx-[41px] shadow-[0px_15px_46px_8px_rgba(38,38,38,0.08)] h-fit rounded-[34px]  min-w-[286.39px] overflow-hidden ${className}`}>
         <div className="h-[211.62px] w-full ">
             <img src={imageUrl} alt="image" className="w-full object-cover h-full" />
         </div>
