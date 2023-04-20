@@ -43,7 +43,7 @@ export function DomainsPopupCard({
 
       {/* divider - only for desktop */}
 
-      <div className="divider mx-[17px] h-[1px] bg-primary-main mt-[17px] mb-[50px] md:min-w-[640px] md:m-[29px] xl:min-w-full"></div>
+      <div className="divider mx-[17px] h-[1px] bg-primary-main mt-[17px] mb-[50px] max-md:hidden md:min-w-[640px] md:m-[29px] xl:min-w-full"></div>
 
     </div>
   );

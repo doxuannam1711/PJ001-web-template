@@ -11,39 +11,11 @@ html {
     @apply font-primary scroll-smooth
 }
 
-body{
+body {
     @apply hide-scroll-ms
 }
 
 
-/* Typo */
-
-.text-typo-h3 {
-    @apply text-[44px] leading-[48px] font-bold;
-}
-
-.text-typo-h4 {
-    @apply text-[39px] leading-[48.17px] font-semibold tracking-[0.25px];
-}
-
-
-.text-typo-h5 {
-    @apply text-[24px] leading-[32px] font-semibold;
-}
-
-
-.text-typo-h6 {
-    @apply text-[19px] leading-[24px] font-light tracking-[0.15px];
-}
-
-
-.text-typo-body {
-    @apply text-[16px] leading-[24px] font-normal tracking-[0.15px];
-}
-
-.text-typo-overline {
-    @apply text-[12px] leading-[32px] font-bold tracking-[1px] uppercase;
-}
 
 /* Common */
 
@@ -91,7 +63,7 @@ body{
 }
 
 .scroll-custom::-webkit-scrollbar-thumb,
-.scroll-custom-vertical::-webkit-scrollbar-thumb{
+.scroll-custom-vertical::-webkit-scrollbar-thumb {
     border-radius: 25px;
     background-color: #FF303E;
 }
@@ -121,9 +93,43 @@ body{
         -ms-overflow-style: none;
         scrollbar-width: none;
     }
+
     .hide-scroll-ms::-webkit-scrollbar {
         display: none;
     }
+
+    /* Typo */
+    .text-typo-h2 {
+        @apply text-[60px] leading-[64px] font-bold tracking-[-0.5px];
+    }
+
+    .text-typo-h3 {
+        @apply text-[44px] leading-[48px] font-bold;
+    }
+
+    .text-typo-h4 {
+        @apply text-[39px] leading-[48.17px] font-semibold tracking-[0.25px];
+    }
+
+
+    .text-typo-h5 {
+        @apply text-[24px] leading-[32px] font-semibold;
+    }
+
+
+    .text-typo-h6 {
+        @apply text-[19px] leading-[24px] font-light tracking-[0.15px];
+    }
+
+
+    .text-typo-body {
+        @apply text-[16px] leading-[24px] font-normal tracking-[0.15px];
+    }
+
+    .text-typo-overline {
+        @apply text-[12px] leading-[32px] font-bold tracking-[1px] uppercase;
+    }
+
 }
 
 .hide-scroll-desktop::-webkit-scrollbar {

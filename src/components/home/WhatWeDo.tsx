@@ -8,7 +8,7 @@ import { ScrollInfo } from "./common/ScrollInfo";
 
 export function WhatWeDo() {
     return (
-        <section>
+        <section className="mb-[213px] md:mb-0">
             <HomeMobileTitle className="md:hidden mt-20">What We <span className="text-primary-light">Do</span></HomeMobileTitle>
 
             <HomeTitle textClassName="text-black" className="hidden md:flex md:pl-[70px]">
@@ -35,7 +35,7 @@ export function WhatWeDo() {
             </div>
 
             {/* scroll */}
-            <ScrollInfo className="md:mt-[185px] md:mb-[154px]"></ScrollInfo>
+            <ScrollInfo className="md:mt-[185px] md:mb-[154px] hidden md:flex"></ScrollInfo>
         </section>
     )
 }
