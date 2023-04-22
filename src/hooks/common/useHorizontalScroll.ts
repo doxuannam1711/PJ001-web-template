@@ -106,7 +106,7 @@ export function useHorizontalScroll<
                   : Math.ceil(value / widthPerItem);
               value = pos * widthPerItem;
             }
- 
+
             el.scrollTo({
               left: value,
               behavior: isSmooth ? "smooth" : undefined,
@@ -185,6 +185,7 @@ export function useHorizontalScroll<
             e.deltaY > 0
               ? Math.floor(value / widthPerItem)
               : Math.ceil(value / widthPerItem);
+
           value = pos * widthPerItem;
         }
 
