@@ -102,8 +102,8 @@ export function useHorizontalScroll<
               let widthPerItem = el.scrollWidth / itemsCount;
               let pos =
                 e.deltaY > 0
-                  ? Math.floor(value / widthPerItem)
-                  : Math.ceil(value / widthPerItem);
+                  ? Math.floor(value / widthPerItem) + 1
+                  : Math.ceil(value / widthPerItem) - 1;
               value = pos * widthPerItem;
             }
 
@@ -184,8 +184,8 @@ export function useHorizontalScroll<
           let widthPerItem = el.scrollWidth / itemsCount;
           let pos =
             e.deltaY > 0
-              ? Math.floor(value / widthPerItem)
-              : Math.ceil(value / widthPerItem);
+              ? Math.floor(value / widthPerItem) + 1
+              : Math.ceil(value / widthPerItem) - 1;
 
           value = pos * widthPerItem;
         }
