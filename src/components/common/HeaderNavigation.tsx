@@ -12,6 +12,7 @@ export function HeaderNavigation() {
             <li className=" relative "><a href="#" className="block font-[Montserrat] normal font-[700] text-[44px] leading-[48px] text-[#FFFFFF] pl-[32px] pt-[18px] pb-[18px] uppercase no-underline" >About</a></li>          
             <li className=" relative "><a href="#" className="block font-[Montserrat] normal font-[700] text-[44px] leading-[48px] text-[#FFFFFF] pl-[32px] pt-[18px] pb-[18px] uppercase no-underline" >Kontakt</a></li>          
          </ul>
+         
       </div>
      
         
