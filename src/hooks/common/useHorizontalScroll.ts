@@ -63,9 +63,9 @@ export function useHorizontalScroll<
           // Is in range but not hit the top
           if (!el.matches(":hover")) {
             let isInContainer =
-              offsetParent - document.documentElement.scrollTop > 1;
+              offsetParent - document.documentElement.scrollTop > 5;
             let isHitTopContainer =
-              offsetParent - document.documentElement.scrollTop <= 1;
+              offsetParent - document.documentElement.scrollTop <= 5;
             if (isInContainer) {
               window.scrollTo({
                 top: offsetParent,
@@ -144,7 +144,7 @@ export function useHorizontalScroll<
           }
         }
         let backToPos = false;
-  
+
         if (
           (Math.abs(el.scrollLeft - (el.scrollWidth - el.offsetWidth)) <= 5 &&
             e.deltaY > 0) ||
@@ -157,9 +157,9 @@ export function useHorizontalScroll<
           if (body.style.position != "fixed") e.preventDefault();
 
           let isInContainer =
-            offsetParent - document.documentElement.scrollTop > 1;
+            offsetParent - document.documentElement.scrollTop > 5;
           let isHitTopContainer =
-            offsetParent - document.documentElement.scrollTop <= 1;
+            offsetParent - document.documentElement.scrollTop <= 5;
           // Is in range but not hit the top
           if (isInContainer) {
             window.scrollTo({
@@ -189,13 +189,12 @@ export function useHorizontalScroll<
 
           value = pos * widthPerItem;
         }
-     
+
         if (
           Math.abs(offsetParent - document.documentElement.scrollTop) <
             areaCheckOffset &&
           backToPos
         ) {
-          console.log(value);
           el.scrollTo({
             left: value,
             behavior: isSmooth ? "smooth" : undefined,
